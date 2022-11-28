@@ -1,0 +1,104 @@
+@import './mixins.module.scss';
+
+.navbar {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0rem;
+  z-index: 11;
+  width: 100%;
+  max-width: 140rem;
+  height: var(--nav-height);
+  background-color: rgba(10, 25, 47, 0.85);
+  // backdrop-filter: blur(10px);
+  backdrop-filter: blur(1rem);
+  transition: var(--transition);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  padding: 0rem 2.5rem;
+  @include tablet {
+    padding: 0rem 4rem;
+  }
+  @include laptop {
+    padding: 0rem 5rem;
+  }
+
+  .navbarContainer {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: var(--lightest-slate);
+    font-family: var(--font-mono);
+    counter-reset: item 0;
+    z-index: 12;
+  }
+  .logo {
+    color: var(--green);
+    .icon {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .logoLine {
+        fill: var(--green);
+        stroke-dasharray: 497;
+        stroke-dashoffset: 497;
+        // animation: draw 1400ms ease-in-out 4ms forwards;
+        // fill: white;
+        stroke: var(--green);
+        stroke-width: 1;
+        transition: 0.5s;
+      }
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+  }
+  .navigation {
+    nav {
+      display: flex;
+      // align-items: center;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        margin: 0rem 0.5rem;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        position: relative;
+        transition: var(--transition);
+        font-size: var(--fz-xs);
+        // letter-spacing: 0.02rem;
+        &:hover {
+          color: var(--green);
+        }
+        span {
+          color: var(--green);
+          font-size: var(--fz-xxs);
+        }
+      }
+      .resumeButton {
+        @include smallButton;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
