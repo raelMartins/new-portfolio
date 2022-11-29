@@ -30,12 +30,9 @@ const Navbar = () => {
                 </g>
               </g>
             </svg>
-            <a
-              href="/resume/Olamide Akeredolu-Martins' Resume - New.pdf"
-              download
-            >
+            <Link href='/resume/resume-olamide-akeredolu-martins.pdf'>
               <h1>M</h1>
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.navigation}>
@@ -60,13 +57,14 @@ const Navbar = () => {
               <span>04.</span>Contact
               {/* </a> */}
             </Link>
-            <a
-              href="/resume/Olamide Akeredolu-Martins' Resume - New.pdf"
-              download
+            <Link
+              href='/resume/resume-olamide-akeredolu-martins.pdf'
+              target='_blank'
+              rel='noreferrer'
               className={styles.resumeButton}
             >
               Resume
-            </a>
+            </Link>
           </nav>
         </div>
       </div>

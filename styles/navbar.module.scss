@@ -46,15 +46,9 @@
       display: flex;
       align-items: center;
       position: relative;
+      transform: rotate(90deg);
       .logoLine {
         fill: var(--green);
-        stroke-dasharray: 497;
-        stroke-dashoffset: 497;
-        // animation: draw 1400ms ease-in-out 4ms forwards;
-        // fill: white;
-        stroke: var(--green);
-        stroke-width: 1;
-        transition: 0.5s;
       }
       h1 {
         display: flex;
@@ -68,6 +62,7 @@
         margin: 0rem;
         font-size: 2rem;
         text-align: center;
+        transform: rotate(-90deg);
       }
     }
   }

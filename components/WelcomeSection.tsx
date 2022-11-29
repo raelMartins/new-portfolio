@@ -13,7 +13,7 @@ const WelcomeSection = () => {
         on building accessible, human-centered products at <a>Upstatement</a>.
       </p>
       <Link className={styles.viewMyProjects} href='/#projects'>
-        Check out my projects
+        Check out my projects!
       </Link>
     </section>
   );

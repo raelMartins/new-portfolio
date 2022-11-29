@@ -1,3 +1,5 @@
+import FixedEmailLink from 'components/FIxedEmailLink';
+import FixedSocialLinks from 'components/FIxedSocialLinks';
 import Navbar from 'components/Navbar';
 import WelcomeSection from 'components/WelcomeSection';
 import Head from 'next/head';
@@ -21,6 +23,8 @@ export default function Home() {
         <SplashScreen />
         <Navbar />
         <div className={styles.mainContent}>
+          <FixedEmailLink />
+          <FixedSocialLinks />
           <WelcomeSection />
         </div>
       </main>
