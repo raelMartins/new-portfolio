@@ -1,7 +1,7 @@
-@import './mixins.module.scss';
+@import '../mixins.module.scss';
 
 .welcomeSection {
-  min-height: 100vh !important;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;

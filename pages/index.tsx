@@ -1,7 +1,8 @@
 import FixedEmailLink from 'components/FIxedEmailLink';
 import FixedSocialLinks from 'components/FIxedSocialLinks';
 import Navbar from 'components/Navbar';
-import WelcomeSection from 'components/WelcomeSection';
+import AboutMe from 'components/sections/AboutMe';
+import WelcomeSection from 'components/sections/WelcomeSection';
 import Head from 'next/head';
 import Image from 'next/image';
 import SplashScreen from '../components/SplashScreen';
@@ -26,6 +27,7 @@ export default function Home() {
           <FixedEmailLink />
           <FixedSocialLinks />
           <WelcomeSection />
+          <AboutMe />
         </div>
       </main>
       <footer className={styles.footer}></footer>

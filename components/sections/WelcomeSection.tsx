@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/welcomesection.module.scss';
+import styles from '../../styles/sections/welcomesection.module.scss';
 
 const WelcomeSection = () => {
   return (
