@@ -1,7 +1,9 @@
 import FixedEmailLink from 'components/FIxedEmailLink';
 import FixedSocialLinks from 'components/FIxedSocialLinks';
+import Footer from 'components/Footer';
 import Navbar from 'components/Navbar';
 import AboutMe from 'components/sections/AboutMe';
+import ContactMe from 'components/sections/ContactMe';
 import EmploymentHistory from 'components/sections/EmploymentHistory';
 import WelcomeSection from 'components/sections/WelcomeSection';
 import Head from 'next/head';
@@ -30,9 +32,10 @@ export default function Home() {
           <WelcomeSection />
           <AboutMe />
           <EmploymentHistory />
+          <ContactMe />
         </div>
       </main>
-      <footer className={styles.footer}></footer>
+      <Footer />
     </div>
   );
 }

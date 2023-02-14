@@ -52,7 +52,7 @@ const EmploymentHistory = () => {
   };
 
   return (
-    <section id='employment' className={styles.employmentHistorySection}>
+    <section id='jobs' className={styles.employmentHistorySection}>
       <h1>Where I’ve Worked</h1>
       <div className={styles.innerContent}>
         <div className={styles.theWhere}>

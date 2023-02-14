@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import styles from '../styles/navbar.module.scss';
 import IconSVG from './IconSVG';
 
 const Navbar = () => {
+  const [hideNav, setHideNav] = useState(false);
+  useEffect(() => {}, []);
+
   return (
     <header className={styles.navbar}>
       <div className={styles.navbarContainer}>
