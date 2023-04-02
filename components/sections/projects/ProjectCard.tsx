@@ -1,9 +1,9 @@
 import { FiExternalLink, FiGithub, FiFolder } from 'react-icons/fi';
 import styles from 'styles/sections/projects/projectcard.module.scss';
 
-const ProjectCard = () => {
+const ProjectCard = ({ data }) => {
   return (
-    <a href='#' className={styles.projectCard}>
+    <a href={data.url} className={styles.projectCard}>
       <div className={styles.top}>
         <div className={styles.left}>
           <a>
@@ -19,15 +19,15 @@ const ProjectCard = () => {
           </a>
         </div>
       </div>
-      <h4>Integrating Algolia Search with WordPress Multisite</h4>
-      <p>
-        Building a custom multisite compatible WordPress plugin to build global
-        search with Algolia
-      </p>
+      <h4>{data.name}</h4>
+      <p>{data.description}</p>
       <ul className={styles.cardProjectTechList}>
-        <li>Algolia</li>
+        {data.technologies.map((tech) => (
+          <li key={Math.random()}>{tech}</li>
+        ))}
+        {/* <li>Algolia</li>
         <li>WordPress</li>
-        <li>PHP</li>
+        <li>PHP</li> */}
       </ul>
     </a>
   );

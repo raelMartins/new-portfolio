@@ -3,12 +3,75 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import styles from 'styles/sections/projects.module.scss';
 import MoreProjects from './projects/MoreProjects';
 
-const Projects = () => {
+const Projects = ({ projects }) => {
   return (
     <section className={styles.projectsSection} id='projects'>
       <h1>Some Things I’ve Built</h1>
       <ul className={styles.projectList}>
-        <li className={styles.listItem}>
+        {projects.slice(0, 3).map((project) => (
+          <li className={styles.listItem} key={project.id}>
+            <div className={styles.projectImage}>
+              <div className={styles.imageContainer}>
+                <Image
+                  src={`/images/${project.image}.PNG`}
+                  alt={project.name}
+                  fill
+                  style={{ objectFit: 'contain' }}
+                />
+              </div>
+            </div>
+            <div className={styles.projectDescription}>
+              <p className={styles.caption}>Featured Project</p>
+              <h3 className={styles.projectTitle}>
+                <a href='#' rel='noopener noreferrer' target='_blank'>
+                  {project.name}
+                </a>
+              </h3>
+              <div className={styles.description}>
+                <p>
+                  {project.description}
+                  {/* A minimal, dark blue theme for VS Code, Sublime Text, Atom,
+                  iTerm, and more. Available on{' '}
+                  <a href='#' target='_blank' rel='noopener noreferrer'>
+                    Visual Studio Marketplace
+                  </a>
+                  ,{' '}
+                  <a href='#' target='_blank' rel='noopener noreferrer'>
+                    Package Control
+                  </a>
+                  ,{' '}
+                  <a href='#' target='_blank' rel='noopener noreferrer'>
+                    Atom Package Manager
+                  </a>
+                  , and{' '}
+                  <a href='#' target='_blank' rel='noopener noreferrer'>
+                    npm
+                  </a> */}
+                  .
+                </p>
+              </div>
+              <ul className={styles.projectTechList}>
+                {project.technologies.map((tech) => (
+                  <li key={Math.random()}>{tech}</li>
+                ))}
+                {/* <li>VS Code</li>
+                <li>Sublime Text</li>
+                <li>Atom</li>
+                <li>iTerm2</li>
+                <li>Hyper</li> */}
+              </ul>
+              <div className={styles.links}>
+                <a href={project.url} rel='noopener noreferrer' target='_blank'>
+                  <FiGithub />
+                </a>
+                <a href={project.url} rel='noopener noreferrer' target='_blank'>
+                  <FiExternalLink />
+                </a>
+              </div>
+            </div>
+          </li>
+        ))}
+        {/* <li className={styles.listItem}>
           <div className={styles.projectImage}>
             <div className={styles.imageContainer}>
               <Image
@@ -169,9 +232,9 @@ const Projects = () => {
               </a>
             </div>
           </div>
-        </li>
+        </li> */}
       </ul>
-      <MoreProjects />
+      <MoreProjects projects={projects.slice(3)} />
     </section>
   );
 };

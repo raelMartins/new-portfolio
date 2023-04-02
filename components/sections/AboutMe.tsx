@@ -8,76 +8,57 @@ const AboutMe = () => {
       <div className={styles.inner}>
         <div className={styles.text}>
           <p>
-            Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Hey there! My name is Martins and I enjoy creating things that live
+            on the internet. I wrote my first line of code way back in primary
+            or elementary school with QBASIC. Then many many years later, in
+            2016, i built my first Wordpress website and I was hooked. I&apos;d
+            always loved tech and the concept of having an idea, and being able
+            to convert it into an actual working thing by writing a few lines of
+            code really blew my mind.
           </p>
           <p>
-            Fast-forward to today, and I’ve had the privilege of working at{' '}
+            Fast-forward to today, and I’ve had the privilege of building{' '}
             <a
-              href='https://personalsite-raelmartins.vercel.app/'
+              href='https://classytouchlaundry-web.vercel.app/'
               target='_blank'
               rel='noreferrer'
             >
-              an advertising agency
+              a laundry service platform
             </a>
             ,{' '}
-            <a
-              href='https://personalsite-raelmartins.vercel.app/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              a start-up
-            </a>
-            ,{' '}
-            <a
-              href='https://personalsite-raelmartins.vercel.app/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              a huge corporation
+            <a href='https://betrelate.com' target='_blank' rel='noreferrer'>
+              a social media platform
             </a>
             , and{' '}
-            <a
-              href='https://personalsite-raelmartins.vercel.app/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              a student-led design studio
+            <a href='https://iberrands.com' target='_blank' rel='noreferrer'>
+              a logistics delivery website
             </a>
-            . My main focus these days is building accessible, inclusive
-            products and digital experiences at{' '}
-            <a
-              href='https://personalsite-raelmartins.vercel.app/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Upstatement
+            . My main focus these days is building a fun, engaging digital
+            social media experience at{' '}
+            <a href='https://betrelate.com' target='_blank' rel='noreferrer'>
+              Betrelate
             </a>{' '}
-            for a variety of clients.
           </p>
           <p>
-            I also recently{' '}
+            I have also recently been looking into getting started with{' '}
             <a
-              href='https://personalsite-raelmartins.vercel.app/'
+              href='https://medium.com/@olamideakeredolu'
               target='_blank'
               rel='noreferrer'
             >
-              launched a course
+              technical writing
             </a>{' '}
-            that covers everything you need to build a web app with the Spotify
-            API using Node & React.
+            on topics I am currently learning. More on that in the near future
+            (hopefully :{')'} ).
           </p>
           <p>Here are a few technologies I’ve been working with recently:</p>
           <ul>
             <li>JavaScript (ES6+)</li>
             <li>TypeScript</li>
             <li>React</li>
-            <li>Eleventy</li>
+            <li>Vue</li>
             <li>Node.js</li>
-            <li>WordPress</li>
+            <li>React Native</li>
           </ul>
         </div>
         <div className={styles.image}>
@@ -88,11 +69,18 @@ const AboutMe = () => {
               width={300}
               height={300}
             /> */}
-            <Image
+            {/* <Image
               src='/testing-brittanychiang.avif'
               alt='My Image'
               width={300}
               height={300}
+            /> */}
+            <Image
+              src='/my-image.jpeg'
+              alt='My Image'
+              width={300}
+              height={300}
+              style={{ objectFit: 'cover' }}
             />
           </div>
         </div>

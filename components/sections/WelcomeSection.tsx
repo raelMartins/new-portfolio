@@ -10,7 +10,8 @@ const WelcomeSection = () => {
       <p>
         I&apos;m a software engineer specializing in building (and occasionally
         designing) exceptional digital experiences. Currently, I&apos;m focused
-        on building accessible, human-centered products at <a>Upstatement</a>.
+        on building up an easy to use social media platform at{' '}
+        <a href='https://betrelate.com'>Betrelate</a>.
       </p>
       <Link className={styles.viewMyProjects} href='/#projects'>
         Check out my projects!

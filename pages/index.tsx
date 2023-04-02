@@ -12,8 +12,9 @@ import Image from 'next/image';
 import SplashScreen from '../components/SplashScreen';
 import styles from '../styles/home.module.scss';
 import { useState } from 'react';
+import fs from 'fs';
 
-export default function Home() {
+export default function Home({ projects }) {
   const [showSplash, setShowSplash] = useState(true);
   return (
     <div className={styles.container}>
@@ -42,7 +43,7 @@ export default function Home() {
               <WelcomeSection />
               <AboutMe />
               <EmploymentHistory />
-              <Projects />
+              <Projects projects={projects} />
               <ContactMe />
             </div>
           </main>
@@ -52,3 +53,12 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const res = await fs.promises.readFile(
+    `./project-data/all-projects.json`,
+    'utf-8'
+  );
+  const projects = JSON.parse(res);
+  return { props: { projects } };
+};

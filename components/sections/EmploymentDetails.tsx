@@ -23,7 +23,7 @@ const EmploymentDetails = ({
         <span>
           @{' '}
           <a href={url} target='_blank' rel='noreferrer noopener'>
-            {company}
+            {company.split('-')[0]}
           </a>
         </span>
       </h3>

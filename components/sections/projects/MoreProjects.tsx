@@ -1,7 +1,7 @@
 import ProjectCard from 'components/sections/projects/ProjectCard';
 import styles from 'styles/sections/projects/moreprojects.module.scss';
 
-const MoreProjects = () => {
+const MoreProjects = ({ projects }) => {
   return (
     <section className={styles.moreProjects}>
       <div className={styles.header}>
@@ -9,7 +9,12 @@ const MoreProjects = () => {
         <a>view the archive</a>
       </div>
       <ul className={styles.projectList}>
-        <li>
+        {projects.map((project) => (
+          <li key={project.id}>
+            <ProjectCard data={project} />
+          </li>
+        ))}
+        {/* <li>
           <ProjectCard />
         </li>
         <li>
@@ -32,10 +37,7 @@ const MoreProjects = () => {
         </li>
         <li>
           <ProjectCard />
-        </li>
-        <li>
-          <ProjectCard />
-        </li>
+        </li> */}
       </ul>
       <div className={styles.showMoreButton}>
         <button>Show More</button>
