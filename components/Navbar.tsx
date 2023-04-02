@@ -15,10 +15,14 @@ const Navbar = () => {
       if (showNav) {
         overlay.style.display = 'block';
         setTimeout(() => {
-          overlay.style.backdropFilter = 'blur(0.3rem)';
+          overlay.style.backdropFilter
+            ? (overlay.style.backdropFilter = 'blur(0.3rem)')
+            : null;
         }, 10);
       } else {
-        overlay.style.backdropFilter = 'blur(0rem)';
+        overlay.style.backdropFilter
+          ? (overlay.style.backdropFilter = 'blur(0rem)')
+          : null;
         setTimeout(() => {
           overlay.style.display = 'none';
         }, 320);
