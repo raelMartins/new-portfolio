@@ -27,15 +27,16 @@ const Navbar = () => {
   }, [showNav]);
 
   useEffect(() => {
+    let oldScroll: number;
     window.onscroll = function (e) {
       // print "false" if direction is down and "true" if up
-      setStickyNav(this.oldScroll > this.scrollY);
-      if (this.scrollY === 0) {
+      setStickyNav(oldScroll > window.scrollY);
+      if (window.scrollY === 0) {
         setAtTheTop(true);
       } else {
         setAtTheTop(false);
       }
-      this.oldScroll = this.scrollY;
+      oldScroll = window.scrollY;
     };
   }, []);
 
