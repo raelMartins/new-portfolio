@@ -29,12 +29,36 @@ export default function Home({ projects }: { projects: Project[] }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Martins&apos; Website</title>
+        <title>Martins Akeredolu - Portfolio</title>
         <meta
           name='description'
-          content="Olamide Akeredolu-Martins' personal website. Enjoy!"
+          content='Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!'
         />
         <link rel='icon' href='/mybitmoji.png' />
+
+        {/* Open Graph Meta Tags */}
+        <meta property='og:title' content='Martins Akeredolu - Portfolio' />
+        <meta property='og:type' content='article' />
+        <meta
+          property='og:description'
+          content='Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!'
+        />
+        <meta property='og:image' content='/mybitmoji.png' />
+        <meta property='og:site_name' content='Martins Akeredolu - Portfolio' />
+
+        {/* Twitter  */}
+        <meta name='twitter:title' content='Martins Akeredolu - Portfolio' />
+        <meta
+          name='twitter:description'
+          content='Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!'
+        />
+        <meta name='twitter:image' content='/mybitmoji.png' />
+        <meta name='twitter:card' content='summary' />
+        <meta name='twitter:site' content='@_raelmartins' />
+        <meta
+          name='twitter:image:alt'
+          content='Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!'
+        />
       </Head>
 
       {showSplash ? (
