@@ -1,46 +1,38 @@
 import ProjectCard from 'components/sections/projects/ProjectCard';
+import Link from 'next/link';
+import { useState } from 'react';
 import styles from 'styles/sections/projects/moreprojects.module.scss';
 
-const MoreProjects = ({ projects }) => {
+type Project = {
+  id: number;
+  url: string;
+  name: string;
+  github: string;
+  description: string;
+  technologies: [string];
+};
+const MoreProjects = ({ projects }: { projects: Project[] }) => {
+  const [showAll, setShowAll] = useState(false);
+
+  const list = !showAll ? projects.slice(0, 6) : projects;
+
   return (
     <section className={styles.moreProjects}>
       <div className={styles.header}>
         <h2>Other Noteworthy Projects</h2>
-        <a>view the archive</a>
+        <a>view the archive below</a>
       </div>
       <ul className={styles.projectList}>
-        {projects.map((project) => (
+        {list.map((project: Project) => (
           <li key={project.id}>
             <ProjectCard data={project} />
           </li>
         ))}
-        {/* <li>
-          <ProjectCard />
-        </li>
-        <li>
-          <ProjectCard />
-        </li>
-        <li>
-          <ProjectCard />
-        </li>
-        <li>
-          <ProjectCard />
-        </li>
-        <li>
-          <ProjectCard />
-        </li>
-        <li>
-          <ProjectCard />
-        </li>
-        <li>
-          <ProjectCard />
-        </li>
-        <li>
-          <ProjectCard />
-        </li> */}
       </ul>
       <div className={styles.showMoreButton}>
-        <button>Show More</button>
+        {!showAll && (
+          <button onClick={() => setShowAll(true)}>Show More</button>
+        )}
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ const SplashScreen = ({ show = true, removeSplash = () => {} }) => {
           splash.style.display = 'none';
           removeSplash();
         }, 200);
-      }, 4500);
+      }, 3000);
     }
   }, []);
 

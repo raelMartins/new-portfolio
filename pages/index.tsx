@@ -14,7 +14,17 @@ import styles from '../styles/home.module.scss';
 import { useState } from 'react';
 import fs from 'fs';
 
-export default function Home({ projects }) {
+type Project = {
+  id: number;
+  url: string;
+  name: string;
+  github: string;
+  description: string;
+  technologies: [string];
+  image: string;
+};
+
+export default function Home({ projects }: { projects: Project[] }) {
   const [showSplash, setShowSplash] = useState(true);
   return (
     <div className={styles.container}>
