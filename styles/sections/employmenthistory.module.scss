@@ -55,6 +55,7 @@
     line-height: 1.3;
     display: flex;
     flex-direction: column;
+    // display: none;
     @include largephone {
       gap: 2rem;
       flex-direction: row;
@@ -69,11 +70,13 @@
     display: flex;
     flex-direction: column;
     overflow-x: auto;
-    width: calc(100% + 10rem);
-    margin-left: -5rem;
-    margin-right: -5rem;
+    // width: calc(100% + 10rem);
+    width: 100%;
+    // margin-left: -5rem;
+    // margin-right: -5rem;
     margin-bottom: 3rem;
-    padding-left: 5rem;
+    // padding-left: 5rem;
+    // display: none;
     @include largephone {
       margin-left: 0rem;
       margin-right: 0rem;

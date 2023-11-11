@@ -11,7 +11,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import SplashScreen from '../components/SplashScreen';
 import styles from '../styles/home.module.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import fs from 'fs';
 
 type Project = {
@@ -26,6 +26,45 @@ type Project = {
 
 export default function Home({ projects }: { projects: Project[] }) {
   const [showSplash, setShowSplash] = useState(true);
+
+  useEffect(() => {
+    if (!showSplash) {
+      const sections = Array.from(document.getElementsByTagName('section'));
+      // const anchor_tags = Array.from(document.getElementsByTagName('a'));
+
+      // const cursor = document.getElementById('custom_cursor') as HTMLElement;
+      // const pointer = document.getElementById('custom_pointer') as HTMLElement;
+
+      // anchor_tags.forEach((tag) => {
+      //   tag.addEventListener('mouseenter', () => {
+      //     cursor.style.backgroundColor = '#ef6616a2';
+      //     pointer.style.backgroundColor = 'transparent';
+      //   });
+      //   tag.addEventListener('mouseout', () => {
+      //     cursor.style.backgroundColor = 'transparent';
+      //     pointer.style.backgroundColor = 'white';
+      //   });
+      // });
+
+      const observer = new IntersectionObserver(
+        (entries) =>
+          entries.forEach((entry: any) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = `1`;
+              entry.target.style.transform = `translateY(0rem)`;
+            }
+          }),
+        {
+          rootMargin: '-30%'
+        }
+      );
+
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    }
+  }, [showSplash]);
+
   return (
     <div className={styles.container}>
       <Head>

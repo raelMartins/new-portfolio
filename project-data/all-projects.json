@@ -2,15 +2,55 @@
   {
     "id": 101,
     "name": "Betrelate",
-    "description": "Building a social media platform specifically tailored for gamblers. Lottery results, live scores and more can be viewed here",
+    "description": "Building a social media platform specifically tailored for football lovers. Lottery results, live scores and more can be viewed here",
     "url": "https://betrelate.com/",
-    "technologies": ["react", "css", "sass", "javascript", "github", "git"],
+    "technologies": ["react", "nextjs", "css", "sass", "javascript", "typescript", "github", "git"],
     "image": "betrelate",
     "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
     "github": ""
   },
   {
     "id": 102,
+    "name": "Games4Tune",
+    "description": "Building a simple gaming platform allowing users to play games and earn money",
+    "url": "https://games4tune.com/",
+    "technologies": ["react", "nextjs","css", "sass", "typescript", "github", "git"],
+    "image": "games4tune",
+    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
+    "github": ""
+  },
+  {
+    "id": 103,
+    "name": "Betrelate Business",
+    "description": "Building a partner platform for Betrelate allowing businesses and companies to create adverts to be placed on the betrelate social media platform",
+    "url": "https://business.betrelate.com/",
+    "technologies": ["vue", "nuxt","css", "sass", "typescript", "github", "git"],
+    "image": "betrelatebusiness",
+    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
+    "github": ""
+  },
+  {
+    "id": 104,
+    "name": "W3BDemy",
+    "description": "Building an E-Learning Platform that users can register to learn on and teach on, simultaneously. They can connect their Solana wallets when signing up and buy courses with Solana",
+    "url": "https://w3bdemy.com/",
+    "technologies": ["react", "nextjs","css", "sass", "typescript", "github", "git"],
+    "image": "w3bdemy",
+    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
+    "github": ""
+  },
+  {
+    "id": 105,
+    "name": "Web Designer Portfolio",
+    "description": "Built a simple single page website to display a web designers projects",
+    "url": "https://chizom-portfolio.vercel.app/",
+    "technologies": ["react", "nextjs","css", "sass", "typescript", "github", "git", "figma"],
+    "image": "chizomportfolio",
+    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
+    "github": ""
+  },
+  {
+    "id": 106,
     "name": "Laundry Service Website",
     "description": "Built this site for Classy Touch Laundry. It allows a customer to track laundry orders and for an admin to edit a customer or an order as well as alert customers when their order is ready to be collected. Google login and Paystack payments were also implented. However at the moment the live site is down. Should be back up before the end of November",
     "url": "https://classytouchlaundry-web.vercel.app/",
@@ -30,7 +70,17 @@
     "github": ""
   },
   {
-    "id": 103,
+    "id": 107,
+    "name": "Obiala",
+    "description": "Built a simple single page website for a client startup brand.",
+    "url": "https://obiala-web.vercel.app/",
+    "technologies": ["react", "nextjs","css", "sass", "typescript", "github", "git", "figma"],
+    "image": "obiala",
+    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
+    "github": ""
+  },
+  {
+    "id": 108,
     "name": "IbErrands",
     "description": "A logistics services website based in Ibadan. I completely reworked the entire frontend of the website. I worked in collaboration with 2 other developers.",
     "url": "https://iberrands.com",
@@ -40,7 +90,7 @@
     "github": ""
   },
   {
-    "id": 104,
+    "id": 109,
     "name": "ReniStore",
     "description": "Building an E-Commerce website that allows users to purchase goods and services off of the internet. The live site is still under construction",
     "url": "https://test.reni.store/",
@@ -50,7 +100,7 @@
     "github": ""
   },
   {
-    "id": 105,
+    "id": 110,
     "name": "Draughts/Checkers Game",
     "description": "Probably my favourite project. I built this app because I missed the game and I hadn't played it in years. I wasn't even sure I could create it at the time, but I pulled it off in record time",
     "url": "https://ultimatedraughts.netlify.app/",
@@ -70,7 +120,7 @@
     "github": "https://github.com/raelMartins/ultimatedraughts"
   },
     {
-    "id": 106,
+    "id": 111,
     "name": "Portfolio V2",
     "description": "This is my current portfolio website! I built it using Nextjs with Brittany Chiang's website as a reference. What do you think?",
     "url": "/",
@@ -89,7 +139,7 @@
     "github": "https://github.com/raelMartins/new-portfolio"
   },
   {
-    "id": 107,
+    "id": 112,
     "name": "Budget Planner Web App",
     "description": "I built this application as a way to track my spending in school, because I was always going broke. I decided to extend it to measure yearly incomes and expenses too",
     "url": "https://raels-budget-app.netlify.app",
@@ -108,7 +158,7 @@
     "github": "https://github.com/raelMartins/budget-planner"
   },
   {
-    "id": 108,
+    "id": 113,
     "name": "Tech Test",
     "description": "This was built as a job interview tech test, mainly testing my ability to interprete design. I liked how it turned out so I decided to display it on here",
     "url": "https://flexit-frontend-dev-test.netlify.app/",
@@ -126,7 +176,7 @@
     "github": "https://github.com/raelMartins/flexit-frontend-dev-test"
   },
   {
-    "id": 109,
+    "id": 114,
     "name": "Portfolio V1",
     "description": "This was my previous portfolio website! I built this in about 5-ish hours. It served the job, but it also desperately needed an upgrade. What do you think about the upgrade?",
     "url": "/https://personalsite-raelmartins.vercel.app/",
@@ -144,7 +194,7 @@
     "github": "https://github.com/raelMartins/personalsite"
   },
   {
-    "id": 110,
+    "id": 115,
     "name": "Social Media Site Template",
     "description": "Converted a random social media site design pixel perfect to create a basis for what looks like a pretty social media app! Not particularly responsive atm, but i might make those adjustments in the future",
     "url": "https://vibe-diaries.vercel.app/",
@@ -162,7 +212,7 @@
     "github": "https://github.com/raelMartins/vibe-diaries"
   },
   {
-    "id": 111,
+    "id": 116,
     "name": "Tour Booking Website",
     "description": "Built a tour booking website that allows users to log in, view tours available, and book them online. I used Pug templating with Express and Mongodb for the serverside rendering",
     "url": "https://natours-martins.herokuapp.com/",
@@ -180,7 +230,7 @@
     "github": "https://github.com/raelMartins/natours"
   },
   {
-    "id": 112,
+    "id": 117,
     "name": "DiceGame",
     "description": "My first ever game. It's not particularly impressive, just basic DOM manipulation, but I remember how excited i was after I created it. So obviously i had to include it in my portfolio. It allows two players to take turns rolling a die. First to reach a specified number wins. But roll two 1s or 6s and well...",
     "url": "https://raels-dicegame.netlify.app/",
@@ -190,7 +240,7 @@
     "github": "https://github.com/raelMartins/dicegame"
   },
   {
-    "id": 113,
+    "id": 118,
     "name": "Recipe Generator",
     "description": "I built this application in order to practice and improve my skills with asynchronous Javascript, and getting data from an external API. It allows a user to search for recipes to prepare a certain dish using a 3rd party, limited API",
     "url": "https://my-forkify-app.netlify.app/",

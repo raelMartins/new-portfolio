@@ -31,7 +31,7 @@ const Navbar = () => {
     window.onscroll = function (e) {
       // print "false" if direction is down and "true" if up
       setStickyNav(oldScroll > window.scrollY);
-      if (window.scrollY === 0) {
+      if (window.scrollY < 20) {
         setAtTheTop(true);
       } else {
         setAtTheTop(false);

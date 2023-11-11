@@ -18,12 +18,12 @@ const Projects = ({ projects }: { projects: Project[] }) => {
     <section className={styles.projectsSection} id='projects'>
       <h1>Some Things I’ve Built</h1>
       <ul className={styles.projectList}>
-        {projects.slice(0, 3).map((project) => (
+        {projects.slice(0, 4).map((project) => (
           <li className={styles.listItem} key={project.id}>
             <div className={styles.projectImage}>
               <div className={styles.imageContainer}>
                 <Image
-                  src={`/images/${project.image}.PNG`}
+                  src={`/images/${project.image}.png`}
                   alt={project.name}
                   fill
                   style={{ objectFit: 'contain' }}
@@ -65,7 +65,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
           </li>
         ))}
       </ul>
-      <MoreProjects projects={projects.slice(3)} />
+      <MoreProjects projects={projects.slice(4)} />
     </section>
   );
 };
