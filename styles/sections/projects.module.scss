@@ -77,8 +77,20 @@
         z-index: 0;
         // width: 60%;
         width: 100%;
+        .mobile_image {
+          display: block;
+        }
+        .tablet_image {
+          display: none;
+        }
         @include tablet {
           width: 60%;
+          .mobile_image {
+            display: none;
+          }
+          .tablet_image {
+            display: block;
+          }
         }
       }
     }

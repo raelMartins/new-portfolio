@@ -22,18 +22,28 @@ const Projects = ({ projects }: { projects: Project[] }) => {
           <li className={styles.listItem} key={project.id}>
             <div className={styles.projectImage}>
               <div className={styles.imageContainer}>
-                <Image
-                  src={`/images/${project.image}.png`}
-                  alt={project.name}
-                  fill
-                  style={{ objectFit: 'contain' }}
-                />
+                <a href={project.url} rel='noopener noreferrer' target='_blank'>
+                  <Image
+                    src={`/images/${project.image}.png`}
+                    alt={project.name}
+                    fill
+                    style={{ objectFit: 'contain' }}
+                    className={styles.tablet_image}
+                  />
+                  <Image
+                    src={`/images/${project.image}.png`}
+                    alt={project.name}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className={styles.mobile_image}
+                  />
+                </a>
               </div>
             </div>
             <div className={styles.projectDescription}>
               <p className={styles.caption}>Featured Project</p>
               <h3 className={styles.projectTitle}>
-                <a href='#' rel='noopener noreferrer' target='_blank'>
+                <a href={project.url} rel='noopener noreferrer' target='_blank'>
                   {project.name}
                 </a>
               </h3>
