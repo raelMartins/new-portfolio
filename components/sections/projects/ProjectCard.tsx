@@ -1,13 +1,6 @@
 import { FiExternalLink, FiGithub, FiFolder } from 'react-icons/fi';
 import styles from 'styles/sections/projects/projectcard.module.scss';
-
-type Project = {
-  url: string;
-  name: string;
-  github: string;
-  description: string;
-  technologies: [string];
-};
+import { Project } from 'utils/types';
 
 const ProjectCard = ({ data }: { data: Project }) => {
   return (

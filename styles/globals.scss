@@ -34,7 +34,7 @@ body {
   min-height: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--navy);
+  background-color: var(--navy) !important;
   color: var(--slate);
   font-family: var(--font-sans);
   font-size: var(--fz-xl);

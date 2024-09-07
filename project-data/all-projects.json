@@ -4,9 +4,18 @@
     "name": "Betrelate",
     "description": "Building a social media platform specifically tailored for football lovers. Lottery results, live scores and more can be viewed here",
     "url": "https://betrelate.com/",
-    "technologies": ["react", "nextjs", "css", "sass", "javascript", "typescript", "github", "git"],
+    "technologies": [
+      "react",
+      "nextjs",
+      "css",
+      "sass",
+      "javascript",
+      "typescript",
+      "github",
+      "git"
+    ],
+    "media": [],
     "image": "betrelate-image",
-    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
     "github": ""
   },
   {
@@ -14,9 +23,17 @@
     "name": "Games4Tune",
     "description": "Building a simple gaming platform allowing users to play games and earn money",
     "url": "https://games4tune.com/",
-    "technologies": ["react", "nextjs","css", "sass", "typescript", "github", "git"],
+    "technologies": [
+      "react",
+      "nextjs",
+      "css",
+      "sass",
+      "typescript",
+      "github",
+      "git"
+    ],
+    "media": [],
     "image": "games4tune",
-    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
     "github": ""
   },
   {
@@ -24,9 +41,17 @@
     "name": "Betrelate Business",
     "description": "Building a partner platform for Betrelate allowing businesses and companies to create adverts to be placed on the betrelate social media platform",
     "url": "https://business.betrelate.com/",
-    "technologies": ["vue", "nuxt","css", "sass", "typescript", "github", "git"],
+    "technologies": [
+      "vue",
+      "nuxt",
+      "css",
+      "sass",
+      "typescript",
+      "github",
+      "git"
+    ],
+    "media": [],
     "image": "betrelatebusiness",
-    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
     "github": ""
   },
   {
@@ -34,9 +59,17 @@
     "name": "W3BDemy",
     "description": "Building an E-Learning Platform that users can register to learn on and teach on, simultaneously. They can connect their Solana wallets when signing up and buy courses with Solana",
     "url": "https://w3bdemy.com/",
-    "technologies": ["react", "nextjs","css", "sass", "typescript", "github", "git"],
+    "technologies": [
+      "react",
+      "nextjs",
+      "css",
+      "sass",
+      "typescript",
+      "github",
+      "git"
+    ],
+    "media": [],
     "image": "w3bdemy",
-    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
     "github": ""
   },
   {
@@ -44,9 +77,18 @@
     "name": "Web Designer Portfolio",
     "description": "Built a simple single page website to display a web designers projects",
     "url": "https://chizom-portfolio.vercel.app/",
-    "technologies": ["react", "nextjs","css", "sass", "typescript", "github", "git", "figma"],
+    "technologies": [
+      "react",
+      "nextjs",
+      "css",
+      "sass",
+      "typescript",
+      "github",
+      "git",
+      "figma"
+    ],
+    "media": [],
     "image": "chizomportfolio",
-    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
     "github": ""
   },
   {
@@ -65,6 +107,7 @@
       "git",
       "javascript"
     ],
+    "media": [],
     "image": "classytouch",
     "blurImage": "LbI5cNIVRiWC00%Laxj]~poeWCj[",
     "github": ""
@@ -74,9 +117,18 @@
     "name": "Obiala",
     "description": "Built a simple single page website for a client startup brand.",
     "url": "https://obiala-web.vercel.app/",
-    "technologies": ["react", "nextjs","css", "sass", "typescript", "github", "git", "figma"],
+    "technologies": [
+      "react",
+      "nextjs",
+      "css",
+      "sass",
+      "typescript",
+      "github",
+      "git",
+      "figma"
+    ],
+    "media": [],
     "image": "obiala",
-    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
     "github": ""
   },
   {
@@ -85,6 +137,7 @@
     "description": "A logistics services website based in Ibadan. I completely reworked the entire frontend of the website. I worked in collaboration with 2 other developers.",
     "url": "https://iberrands.com",
     "technologies": ["javascript", "react", "sass", "css", "git", "github"],
+    "media": [],
     "image": "my-iberrands",
     "blurImage": "LcF$U~~q-;IUxuofj[WB4nIUM{of",
     "github": ""
@@ -95,8 +148,8 @@
     "description": "Building an E-Commerce website that allows users to purchase goods and services off of the internet. The live site is still under construction",
     "url": "https://test.reni.store/",
     "technologies": ["react", "css", "javascript", "github", "git"],
+    "media": [],
     "image": "my-renistore",
-    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
     "github": ""
   },
   {
@@ -115,11 +168,12 @@
       "git",
       "github"
     ],
+    "media": [],
     "image": "ultimatedraughts",
     "blurImage": "LcF$U~~q-;IUxuofj[WB4nIUM{of",
     "github": "https://github.com/raelMartins/ultimatedraughts"
   },
-    {
+  {
     "id": 111,
     "name": "Portfolio V2",
     "description": "This is my current portfolio website! I built it using Nextjs with Brittany Chiang's website as a reference. What do you think?",
@@ -134,6 +188,7 @@
       "github",
       "git"
     ],
+    "media": [],
     "image": "portfolio",
     "blurImage": "L26*dg~q004n?bxuM{M{009F_3%M",
     "github": "https://github.com/raelMartins/new-portfolio"
@@ -153,8 +208,8 @@
       "github",
       "git"
     ],
+    "media": [],
     "image": "budgetplanner",
-    "blurImage": "L3Lg-B_200?G00-n?^t600xaz:xa",
     "github": "https://github.com/raelMartins/budget-planner"
   },
   {
@@ -171,6 +226,7 @@
       "git",
       "javascript"
     ],
+    "media": [],
     "image": "my-flexit-tech-test",
     "blurImage": "LbI5cNIVRiWC00%Laxj]~poeWCj[",
     "github": "https://github.com/raelMartins/flexit-frontend-dev-test"
@@ -189,6 +245,7 @@
       "github",
       "git"
     ],
+    "media": [],
     "image": "myportfolio",
     "blurImage": "L26*dg~q004n?bxuM{M{009F_3%M",
     "github": "https://github.com/raelMartins/personalsite"
@@ -207,6 +264,7 @@
       "github",
       "git"
     ],
+    "media": [],
     "image": "vibe-diaries",
     "blurImage": "L26*dg~q004n?bxuM{M{009F_3%M",
     "github": "https://github.com/raelMartins/vibe-diaries"
@@ -225,6 +283,7 @@
       "mongodb",
       "nodejs"
     ],
+    "media": [],
     "image": "natours",
     "blurImage": "LGN_16nj-qoM00WAxuWB{=W;S1ay",
     "github": "https://github.com/raelMartins/natours"
@@ -235,6 +294,7 @@
     "description": "My first ever game. It's not particularly impressive, just basic DOM manipulation, but I remember how excited i was after I created it. So obviously i had to include it in my portfolio. It allows two players to take turns rolling a die. First to reach a specified number wins. But roll two 1s or 6s and well...",
     "url": "https://raels-dicegame.netlify.app/",
     "technologies": ["html", "javascript", "css", "git", "github", "bootstrap"],
+    "media": [],
     "image": "dicegame",
     "blurImage": "LBOWsdIA00~q55EfN]I:00?G?a%0",
     "github": "https://github.com/raelMartins/dicegame"
@@ -245,6 +305,7 @@
     "description": "I built this application in order to practice and improve my skills with asynchronous Javascript, and getting data from an external API. It allows a user to search for recipes to prepare a certain dish using a 3rd party, limited API",
     "url": "https://my-forkify-app.netlify.app/",
     "technologies": ["html", "javascript", "css", "git", "github"],
+    "media": [],
     "image": "forkify",
     "blurImage": "LAS5R=p,?_yUQ8kVysi{%gg3H=n#",
     "github": "https://github.com/raelMartins/forkify"

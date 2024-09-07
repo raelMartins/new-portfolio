@@ -2,15 +2,8 @@ import ProjectCard from 'components/sections/projects/ProjectCard';
 import Link from 'next/link';
 import { useState } from 'react';
 import styles from 'styles/sections/projects/moreprojects.module.scss';
+import { Project } from 'utils/types';
 
-type Project = {
-  id: number;
-  url: string;
-  name: string;
-  github: string;
-  description: string;
-  technologies: [string];
-};
 const MoreProjects = ({ projects }: { projects: Project[] }) => {
   const [showAll, setShowAll] = useState(false);
 

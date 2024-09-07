@@ -13,16 +13,7 @@ import SplashScreen from '../components/SplashScreen';
 import styles from '../styles/home.module.scss';
 import { useEffect, useState } from 'react';
 import fs from 'fs';
-
-type Project = {
-  id: number;
-  url: string;
-  name: string;
-  github: string;
-  description: string;
-  technologies: [string];
-  image: string;
-};
+import { Project } from 'utils/types';
 
 export default function Home({ projects }: { projects: Project[] }) {
   const [showSplash, setShowSplash] = useState(true);
