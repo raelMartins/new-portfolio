@@ -1,5 +1,70 @@
 [
   {
+    "id": 99,
+    "name": "Myxellia Website",
+    "description": "I handled the development of the primary website for Myxellia. Myxellia is an ever-evolving cloud based infrastructure of interconnected apps and services, built to make real estate work better for all.",
+    "url": "https://www.myxellia.io/",
+    "links": [
+      { "name": "Link 1", "url": "https://youtube.com" },
+      { "name": "Second Link", "url": "https://x.com" }
+    ],
+    "technologies": ["react", "nextjs", "css", "javascript", "github", "git"],
+    "media": [
+      {
+        "url": "/project-media/myxellia/website/landing_page_a.webp",
+        "title": "Landing Page Part A"
+      },
+      {
+        "url": "/project-media/myxellia/website/solutions_page.webp",
+        "title": "Solutions Page"
+      },
+      {
+        "url": "/project-media/myxellia/website/templates_page.webp",
+        "title": "Templates And Offerings Pages"
+      },
+      {
+        "url": "/project-media/myxellia/website/landing_page_b.webp",
+        "title": "Landing Page Part B"
+      }
+    ],
+    "github": ""
+  },
+  {
+    "id": 100,
+    "name": "Test Project 2",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!",
+    "url": "https://betrelate.com/",
+    "links": [
+      { "name": "Link 1", "url": "https://youtube.com" },
+      { "name": "Second Link", "url": "https://x.com" }
+    ],
+    "technologies": [
+      "react",
+      "nextjs",
+      "css",
+      "sass",
+      "javascript",
+      "typescript",
+      "github",
+      "git"
+    ],
+    "media": [
+      {
+        "url": "https://d1x2tneac0i3nn.cloudfront.net/Smart.gif",
+        "title": "Image Title 1"
+      },
+      {
+        "url": "https://d1x2tneac0i3nn.cloudfront.net/Insight.gif",
+        "title": "Image Title 2"
+      },
+      {
+        "url": "https://d1x2tneac0i3nn.cloudfront.net/Fractional.gif",
+        "title": "Image Title 3"
+      }
+    ],
+    "github": ""
+  },
+  {
     "id": 101,
     "name": "Betrelate",
     "description": "Building a social media platform specifically tailored for football lovers. Lottery results, live scores and more can be viewed here",

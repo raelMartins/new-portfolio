@@ -5,7 +5,7 @@ import MoreProjects from './projects/MoreProjects';
 import { Project } from 'utils/types';
 import { ProjectGalleryCard } from './projects/ProjectGalleryCard';
 
-const ProjectCard = ({ project }: { project: Project }) => {
+const ImageProjectCard = ({ project }: { project: Project }) => {
   return (
     <li className={styles.projectCard}>
       <div className={styles.projectImage}>
@@ -65,11 +65,15 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       <ul className={styles.projectList}>
         {projects
           .slice(0, 4)
-          .map((project) =>
+          .map((project, i) =>
             project?.media?.length && project?.media?.length > 0 ? (
-              <ProjectGalleryCard key={project.id} project={project} />
+              <ProjectGalleryCard
+                key={project.id}
+                project={project}
+                index={i}
+              />
             ) : (
-              <ProjectCard key={project.id} project={project} />
+              <ImageProjectCard key={project.id} project={project} />
             )
           )}
       </ul>

@@ -1,5 +1,6 @@
 export type Media = {
-  type: string;
+  type?: string;
+  title?: string;
   url: string;
 };
 
