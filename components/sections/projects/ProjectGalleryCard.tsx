@@ -74,7 +74,21 @@ export const ProjectGalleryCard = ({
                   : 'auto'
             }}
           >
-            {el.title && <Text className={styles.image_title}>{el.title}</Text>}
+            {el.title && (
+              <Text
+                className={styles.image_title}
+                display={`flex`}
+                flexWrap={`wrap`}
+                gap={`10px`}
+              >
+                {el.title}{' '}
+                {el?.demo && (
+                  <a href={el?.demo} rel='noopener noreferrer' target='_blank'>
+                    <FiExternalLink />
+                  </a>
+                )}
+              </Text>
+            )}
             <embed
               src={el?.url}
               style={{

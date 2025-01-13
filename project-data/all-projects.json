@@ -1,13 +1,10 @@
 [
   {
-    "id": 99,
+    "id": 97,
     "name": "Myxellia Website",
     "description": "I handled the development of the primary website for Myxellia. Myxellia is an ever-evolving cloud based infrastructure of interconnected apps and services, built to make real estate work better for all.",
     "url": "https://www.myxellia.io/",
-    "links": [
-      { "name": "Link 1", "url": "https://youtube.com" },
-      { "name": "Second Link", "url": "https://x.com" }
-    ],
+    "links": [],
     "technologies": ["react", "nextjs", "css", "javascript", "github", "git"],
     "media": [
       {
@@ -30,14 +27,68 @@
     "github": ""
   },
   {
-    "id": 100,
-    "name": "Test Project 2",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!",
-    "url": "https://betrelate.com/",
+    "id": 98,
+    "name": "Veerge",
+    "description": "Veerge is the power house and central point of all Myxellia services. I worked in collaboration with other developers to bring Veerge to completion.",
+    "url": "https://veerge.myxellia.io/",
     "links": [
       { "name": "Link 1", "url": "https://youtube.com" },
       { "name": "Second Link", "url": "https://x.com" }
     ],
+    "technologies": ["react", "nextjs", "css", "javascript", "github", "git"],
+    "media": [
+      {
+        "url": "/project-media/myxellia/veerge/auth_flow.webp",
+        "title": "Authenthication Flow"
+      },
+      {
+        "url": "/project-media/myxellia/veerge/listing_page.webp",
+        "title": "Listing And Unit Page"
+      },
+      {
+        "url": "/project-media/myxellia/veerge/theme_purchase_flow.webp",
+        "title": "Theme Purchase Flow"
+      },
+      {
+        "url": "/project-media/myxellia/veerge/user_page.webp",
+        "title": "User Profile Page"
+      }
+    ],
+    "github": ""
+  },
+  {
+    "id": 99,
+    "name": "Adozillion",
+    "description": "Adozillion Homes is a multibillion naira company that offers residential and commercial real estate development services to individuals, public and private organization . They currently have a store running on the terracota theme that I personally developed",
+    "url": "https://app.adozillionhomesng.com/",
+    "links": [],
+    "technologies": ["react", "nextjs", "css", "javascript", "github", "git"],
+    "media": [
+      {
+        "url": "/project-media/myxellia/adozillion/auth_flow.webp",
+        "title": "Authenthication Flow"
+      },
+      {
+        "url": "/project-media/myxellia/adozillion/purchase_flow.webp",
+        "title": "Purchase Flow"
+      },
+      {
+        "url": "/project-media/myxellia/adozillion/asset_page_with_wallet.webp",
+        "title": "Asset Page and Wallet Popup"
+      },
+      {
+        "url": "/project-media/myxellia/adozillion/settings_page.webp",
+        "title": "Settings Page"
+      }
+    ],
+    "github": ""
+  },
+  {
+    "id": 100,
+    "name": "Myxellia Store Themes",
+    "description": "In order to provide adequate value to our clients the property developers, we need to provide them with fully customizable client facing web stores, where they can present and sell their properties to customers, while simultaneously providing their customers with a means to manage their assets. I developed a number of these themes, some of which I have displayed here. Links have also been provided to view live demo's of said themes",
+    "url": "https://betrelate.com/",
+    "links": [],
     "technologies": [
       "react",
       "nextjs",
@@ -50,16 +101,24 @@
     ],
     "media": [
       {
-        "url": "https://d1x2tneac0i3nn.cloudfront.net/Smart.gif",
-        "title": "Image Title 1"
+        "url": "/project-media/myxellia/themes/mountain_lodge.webp",
+        "title": "Mountain Lodge Theme",
+        "demo": "https://zularichproperties-dev.6787878.com/properties"
       },
       {
-        "url": "https://d1x2tneac0i3nn.cloudfront.net/Insight.gif",
-        "title": "Image Title 2"
+        "url": "/project-media/myxellia/themes/brochure.webp",
+        "title": "Brochure Theme",
+        "demo": "https://landwey.6787878.com/"
       },
       {
-        "url": "https://d1x2tneac0i3nn.cloudfront.net/Fractional.gif",
-        "title": "Image Title 3"
+        "url": "/project-media/myxellia/themes/terracota.webp",
+        "title": "Terracota Theme",
+        "demo": "https://app.gidirealestateinvestment.com/"
+      },
+      {
+        "url": "/project-media/myxellia/themes/nordic_hygge.webp",
+        "title": "Nordic Hygge Theme",
+        "demo": "https://jola.6787878.com/"
       }
     ],
     "github": ""
