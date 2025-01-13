@@ -6,6 +6,7 @@ const EmploymentHistory = () => {
   const [tab, setTab] = useState('betrelate');
   const [index, setIndex] = useState(0);
   const [companies] = useState([
+    'myxellia',
     'betrelate',
     'fireswitch-1',
     'classytouch',
@@ -58,30 +59,36 @@ const EmploymentHistory = () => {
           <div className={styles.employmentList}>
             <span
               style={index === 0 ? activeTab : {}}
+              onClick={() => changeTab('myxellia')}
+            >
+              Myxellia
+            </span>
+            <span
+              style={index === 1 ? activeTab : {}}
               onClick={() => changeTab('betrelate')}
             >
               Betrelate
             </span>
             <span
-              style={index === 1 ? activeTab : {}}
+              style={index === 2 ? activeTab : {}}
               onClick={() => changeTab('fireswitch-1')}
             >
               Fireswitch
             </span>
             <span
-              style={index === 2 ? activeTab : {}}
+              style={index === 3 ? activeTab : {}}
               onClick={() => changeTab('classytouch')}
             >
               Classy Touch
             </span>
             <span
-              style={index === 3 ? activeTab : {}}
+              style={index === 4 ? activeTab : {}}
               onClick={() => changeTab('solarworld')}
             >
               SolarWorld
             </span>
             <span
-              style={index === 4 ? activeTab : {}}
+              style={index === 5 ? activeTab : {}}
               onClick={() => changeTab('fireswitch-2')}
             >
               Fireswitch
@@ -92,15 +99,28 @@ const EmploymentHistory = () => {
         <div className={styles.theWhat}>
           <EmploymentDetails
             tasks={[
+              'Developed in its entirety, the client facing website for a real state development company that has generated over ₦10 billion ($6m) in capital gains.',
+              'Created a fully dynamic property store implementation allowing clients to select a theme for their store website and customize it to their preferred appearance.',
+              'Developed a platform that allows real estate property developers easily handle their properties, track their statistics, and handle their payments.',
+              `Was tasked with handling the company's official site as well as its blog and support centre.`
+            ]}
+            title='Frontend Engineer'
+            company='Myxellia'
+            timePeriod='January 2024 - Present'
+            url='https://myxellia.io'
+          />
+          <EmploymentDetails
+            tasks={[
               'Developed a social media startup now used by over 5,000 users, allowing users to post text, images and other media which other users can comment, like, and interact with, live chat with other platform users, create their own groups and communities to discuss similar ideas.',
               "Developed an Administrator site, where admins of the platform could keep track of the over 5,000 active users on the platform, ban accounts, verify accounts, moderate the content on the platform and monitor the platform's growth metrics.",
               'Developed a simple weekly game for users interested in football/soccer allowing them to predict possible outcomes of 10 games being played, share the predictions with friends, and see how well their predictions turn out against other users via the leaderboard.'
             ]}
             title='Frontend Engineer'
             company='Betrelate'
-            timePeriod='December 2021 - Present'
+            timePeriod='December 2021 - April 2024'
             url='https://betrelate.com'
           />
+
           <EmploymentDetails
             tasks={[
               'Redesigned the frontend of the IBErrands webapp and integrated a chat feature into the app.',

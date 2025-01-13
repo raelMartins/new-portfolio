@@ -10,8 +10,9 @@ const WelcomeSection = () => {
       <p>
         I&apos;m a software engineer specializing in building (and occasionally
         designing) exceptional digital experiences. Currently, I&apos;m focused
-        on building up an easy to use social media platform at{' '}
-        <a href='https://betrelate.com'>Betrelate</a>.
+        on building a cloud based infrastructure of interconnected apps and
+        services intended to revolutionize the world of real estate at{' '}
+        <a href='https://www.myxellia.io/'>Myxellia</a>.
       </p>
       <Link className={styles.viewMyProjects} href='/#projects'>
         Check out my projects!

@@ -19,6 +19,14 @@ const AboutMe = () => {
           <p>
             Fast-forward to today, and I’ve had the privilege of building{' '}
             <a
+              href='https://app.gidirealestateinvestment.com/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              multiple online property development stores
+            </a>
+            ,{' '}
+            <a
               href='https://classytouchlaundry-web.vercel.app/'
               target='_blank'
               rel='noreferrer'
@@ -29,14 +37,15 @@ const AboutMe = () => {
             <a href='https://betrelate.com' target='_blank' rel='noreferrer'>
               a social media platform
             </a>
-            , and{' '}
+            ,
             <a href='https://iberrands.com' target='_blank' rel='noreferrer'>
               a logistics delivery website
-            </a>
-            . My main focus these days is building a fun, engaging digital
-            social media experience at{' '}
-            <a href='https://betrelate.com' target='_blank' rel='noreferrer'>
-              Betrelate
+            </a>{' '}
+            and more . My main focus these days is building a cloud based
+            infrastructure of interconnected apps and services intended to
+            revolutionize the world of real estate at{' '}
+            <a href='https://www.myxellia.io/' target='_blank' rel='noreferrer'>
+              Myxellia
             </a>{' '}
           </p>
           <p>
@@ -57,6 +66,8 @@ const AboutMe = () => {
             <li>TypeScript</li>
             <li>React</li>
             <li>Vue</li>
+            <li>NextJS</li>
+            <li>NuxtJS</li>
             <li>Node.js</li>
             <li>React Native</li>
           </ul>
