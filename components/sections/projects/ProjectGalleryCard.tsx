@@ -22,6 +22,7 @@ export const ProjectGalleryCard = ({
   index: number;
 }) => {
   const project_media_length = project?.media?.length || 1;
+  const project_media = [...(project?.media || [])]?.reverse();
   return (
     <Flex
       className={styles.projectGalleryCard}
@@ -56,7 +57,7 @@ export const ProjectGalleryCard = ({
               style={{ objectFit: 'cover' }}
               className={styles.mobile_image}
             /> */}
-        {project?.media?.toReversed()?.map((el, i) => (
+        {project_media?.map((el, i) => (
           <Center
             flexDir={`column`}
             key={i}
