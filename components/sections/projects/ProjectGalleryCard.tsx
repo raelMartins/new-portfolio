@@ -1,15 +1,4 @@
-import {
-  Box,
-  Center,
-  Flex,
-  Heading,
-  Link,
-  List,
-  ListItem,
-  Text,
-  VStack
-} from '@chakra-ui/react';
-import { useState } from 'react';
+import { Box, Center, Flex, Text } from '@chakra-ui/react';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import { Project } from 'utils/types';
 import styles from 'styles/sections/projects/projectgallerycard.module.scss';
@@ -29,7 +18,7 @@ export const ProjectGalleryCard = ({
       minH={`38.2rem`}
       position={`relative`}
       mb={`10rem`}
-      gap={`30px`}
+      gap={`3rem`}
       direction={{ base: `column`, lg: `row` }}
     >
       <Box
@@ -37,32 +26,17 @@ export const ProjectGalleryCard = ({
         flex={`1`}
         position={`relative`}
         maxW={{ base: `100%`, lg: `70%` }}
-        ml={{ base: `auto`, lg: index % 2 == 1 ? 'auto' : '0px' }}
-        mr={{ base: `auto`, lg: index % 2 == 1 ? '0px' : 'auto' }}
+        ml={{ base: `auto`, lg: index % 2 == 1 ? 'auto' : '0rem' }}
+        mr={{ base: `auto`, lg: index % 2 == 1 ? '0rem' : 'auto' }}
         w={{ base: `100%`, lg: `70%` }}
         aspectRatio={{ base: `16 / 9` }}
-        height={{ base: `300px`, lg: `auto` }}
+        height={{ base: `30rem`, lg: `auto` }}
       >
-        {/* <Image
-              src={`/project-media/${project.image}.png`}
-              alt={project.name}
-              fill
-              style={{ objectFit: 'contain' }}
-              className={styles.tablet_image}
-            />
-            <Image
-              src={`/project-media/${project.image}.png`}
-              alt={project.name}
-              fill
-              style={{ objectFit: 'cover' }}
-              className={styles.mobile_image}
-            /> */}
         {project_media?.map((el, i) => (
           <Center
             flexDir={`column`}
             key={i}
             className={styles.embed_container}
-            // position={`relative`}
             style={{
               top: `${(25 * i) / (project_media_length - 1 || 0)}%`,
               left:
@@ -80,7 +54,7 @@ export const ProjectGalleryCard = ({
                 className={styles.image_title}
                 display={`flex`}
                 flexWrap={`wrap`}
-                gap={`10px`}
+                gap={`1rem`}
               >
                 {el.title}{' '}
                 {el?.demo && (
@@ -107,8 +81,8 @@ export const ProjectGalleryCard = ({
         target='_blank'
         className={styles.projectDescription}
         position={{ base: `relative`, lg: `absolute` }}
-        left={{ base: `auto`, lg: index % 2 == 1 ? '0px' : 'auto' }}
-        right={{ base: `auto`, lg: index % 2 == 1 ? 'auto' : '0px' }}
+        left={{ base: `auto`, lg: index % 2 == 1 ? '0rem' : 'auto' }}
+        right={{ base: `auto`, lg: index % 2 == 1 ? 'auto' : '0rem' }}
         backgroundColor={{ base: `var(--light-navy)`, lg: `transparent` }}
       >
         <p className={styles.caption}>Featured Project</p>
@@ -121,8 +95,8 @@ export const ProjectGalleryCard = ({
           <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
         </div>
         <ul className={styles.projectTechList}>
-          {project.technologies.map((tech) => (
-            <li key={Math.random()}>{tech}</li>
+          {project.technologies.map((tech, i) => (
+            <li key={i}>{tech}</li>
           ))}
         </ul>
         <div className={styles.links}>
