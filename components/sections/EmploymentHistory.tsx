@@ -3,7 +3,7 @@ import styles from 'styles/sections/employmenthistory.module.scss';
 import EmploymentDetails from './EmploymentDetails';
 
 const EmploymentHistory = () => {
-  const [tab, setTab] = useState('betrelate');
+  const [tab, setTab] = useState('myxellia');
   const [index, setIndex] = useState(0);
   const [companies] = useState([
     'myxellia',
