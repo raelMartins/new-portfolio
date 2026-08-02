@@ -147,9 +147,10 @@ export default function ResumePage() {
           <div className={styles.educationLanguagesGrid}>
             {education.map((entry) => (
               <article key={entry.institution} className={styles.educationItem}>
-                <h3>{entry.degree}</h3>
+                <h3>{entry.study}</h3>
                 <p>
                   {entry.institution} | {entry.startDate} – {entry.endDate}
+                  {entry.note ? ` | ${entry.note}` : ''}
                 </p>
               </article>
             ))}

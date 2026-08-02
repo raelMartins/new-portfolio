@@ -28,10 +28,13 @@ export interface SkillCategory {
 }
 
 export interface Education {
-  degree: string;
+  /** Study focus / program label — not necessarily a conferred degree */
+  study: string;
   institution: string;
   startDate: string;
   endDate: string;
+  /** Optional clarifying note, e.g. years completed */
+  note?: string;
 }
 
 export interface Language {
@@ -187,10 +190,10 @@ export const resumeData: ResumeData = {
   ],
   education: [
     {
-      degree: 'B.Sc. in Computer Engineering (4-Year Program)',
+      study: 'Computer Engineering Coursework',
       institution: 'University of Lagos',
-      startDate: 'Oct 2017',
-      endDate: 'Sep 2021'
+      startDate: '2017',
+      endDate: '2021'
     }
   ],
   languages: [
