@@ -329,6 +329,17 @@ $resume-font: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   border-radius: 999px;
 }
 
+.educationLanguagesGrid {
+  display: grid;
+  gap: 1.2rem;
+
+  @include tablet {
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+}
+
 .educationItem {
   h3 {
     margin: 0 0 0.3rem;
@@ -342,6 +353,24 @@ $resume-font: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
     color: $resume-slate-soft;
     font-size: 1.3rem;
     font-weight: 500;
+  }
+}
+
+.languagesBlock {
+  p {
+    margin: 0 0 0.4rem;
+    color: $resume-navy-muted;
+    font-size: 1.35rem;
+    line-height: 1.45;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: $resume-navy;
+      font-weight: 600;
+    }
   }
 }
 
@@ -361,15 +390,48 @@ $resume-font: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   .document {
     max-width: none;
     margin: 0;
-    // Absolute units so print padding isn't affected by root font-size.
-    // box-decoration-break: clone reapplies padding on EVERY page fragment
-    // (normal padding-top only appears on page 1).
-    padding: 0.55in 0.65in !important;
+    // Cloned on each page fragment so page 2+ keeps the same inset as page 1.
+    // Works together with @page margin for consistent padding all around.
+    padding: 0.35in !important;
     background: #ffffff !important;
     box-shadow: none !important;
     border-radius: 0;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .header {
+    margin-bottom: 10px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .section {
+    margin-bottom: 8px !important;
+  }
+
+  .summary {
+    font-size: 9.5pt !important;
+    line-height: 1.35 !important;
+  }
+
+  .experienceItem,
+  .projectItem {
+    margin-bottom: 8px !important;
+  }
+
+  .itemHeader {
+    margin-bottom: 2px !important;
+  }
+
+  .skillsGroup {
+    margin-bottom: 6px !important;
+  }
+
+  .skillPill {
+    padding: 0.15rem 0.55rem !important;
+    font-size: 8.5pt !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -384,17 +446,17 @@ $resume-font: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
     content: none !important;
   }
 
-  .skillPill {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+  .projectItem .url {
+    display: none !important;
   }
 
+  /* Prevent elements from breaking mid-page */
   .experienceItem,
   .projectItem,
-  .educationItem,
-  .skillsGroup {
-    break-inside: avoid;
-    page-break-inside: avoid;
+  .skillsGroup,
+  .educationLanguages {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
 
   .section h2 {

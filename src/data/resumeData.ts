@@ -72,11 +72,11 @@ export const resumeData: ResumeData = {
       endDate: 'Present',
       location: 'Remote',
       bullets: [
-        'Architected and executed the full-stack migration of the platform from legacy infrastructure to a modern React, Next.js, TypeScript, and Express.js stack deployed on Railway.',
-        'Built a multi-region payment processing engine supporting Stripe and Paystack to handle localized one-time payments and automated recurring seat-based subscription billing across global markets.',
-        'Developed a dynamic location-based marketplace platform that powers localized service discovery, intelligent user routing, and regional merchant listings.',
-        'Designed and built a custom A/B testing platform dashboard within the admin suite, allowing internal teams to run conversion experiments and track feature adoption metrics in real time.',
-        'Configured enterprise analytics telemetry (Google Tag Manager, Microsoft Clarity, Meta Pixel) and integrated WhatsApp Business API endpoints to optimize user onboarding and automated platform notifications.'
+        'Architected and executed full-stack migration from legacy infrastructure to a modern React, Next.js, TypeScript, and Express.js stack deployed on Railway.',
+        'Built a multi-region payment processing engine supporting Stripe and Paystack to handle localized payments and automated recurring seat-based subscription billing.',
+        'Developed a dynamic location-based marketplace platform powering localized service discovery, intelligent routing, and regional merchant listings.',
+        'Designed and built a custom A/B testing platform dashboard within the admin suite to run real-time conversion experiments and track feature adoption.',
+        'Integrated enterprise telemetry (GTM, Microsoft Clarity, Meta Pixel) and WhatsApp Business API endpoints for automated platform notifications.'
       ]
     },
     {
@@ -86,10 +86,10 @@ export const resumeData: ResumeData = {
       endDate: 'May 2026',
       location: 'Remote',
       bullets: [
-        'Exercised full-cycle frontend ownership across 2 multi-tenant real estate investment platforms that facilitated over $6M+ in total capital gains and asset transactions.',
-        'Engineered an interactive, real-time 3D unit allocation engine, enabling prospective investors to visually navigate, inspect, and select specific real estate units within digital property models.',
-        'Architected a modular, customizable theme engine alongside complex administrative dashboards for real-time asset tracking, role-based user management, and automated payment reconciliation.',
-        'Led the end-to-end rebuild of the primary corporate web portal, significantly improving brand positioning, site performance metrics, and user acquisition flow.'
+        'Exercised full-cycle frontend ownership across 2 multi-tenant real estate investment platforms facilitating over $6M+ in total capital gains and transactions.',
+        'Engineered an interactive, real-time 3D unit allocation engine, enabling investors to visually navigate, inspect, and select specific real estate units within digital models.',
+        'Architected a modular theme engine and administrative dashboards for real-time asset tracking, role-based user management, and automated payment reconciliation.',
+        'Led the end-to-end rebuild of the corporate web portal, significantly improving brand positioning, site performance, and user acquisition.'
       ]
     },
     {
@@ -99,20 +99,18 @@ export const resumeData: ResumeData = {
       endDate: 'Apr 2024',
       location: 'Remote',
       bullets: [
-        'Architected and built a real-time social platform from the ground up for 10,000+ active users, incorporating live chat functionality, interactive community tools, and a dynamic user profile system.',
-        'Optimized performance of the primary social feed and image rendering, reducing initial page load times and increasing key performance metrics by over 30%.',
-        'Designed and implemented comprehensive administrative analytics and moderation suites to track platform health, user activity, and content compliance.'
+        'Architected and built a real-time social platform from the ground up for 10,000+ active users, incorporating live chat, community tools, and dynamic user profiles.',
+        'Optimized social feed and image rendering performance, reducing initial load times and improving key metrics by over 30%.'
       ]
     },
     {
       title: 'Remote Full-Stack Developer (Contract)',
-      company: 'Classy Touch Laundry and Dry Cleaning Services',
+      company: 'Classy Touch Laundry Services',
       startDate: 'Jun 2019',
       endDate: 'Mar 2022',
       location: 'Remote',
       bullets: [
-        'Integrated Paystack API for secure multi-currency payments and Google One Tap for frictionless client onboarding.',
-        'Streamlined customer notification architecture using Mailgun and Twilio APIs to automate transactional emails and SMS messaging.'
+        'Integrated Paystack API for secure multi-currency payments and Google One Tap for frictionless client onboarding.'
       ]
     },
     {
@@ -122,26 +120,11 @@ export const resumeData: ResumeData = {
       endDate: 'Dec 2021',
       location: 'Hybrid/Remote',
       bullets: [
-        'Redesigned the primary web application for IBErrands and integrated an in-app real-time customer support chat feature.',
-        'Mentored and onboarded 4 web development interns, conducting regular code reviews and teaching core frontend architecture principles.'
+        'Redesigned the primary web application for IBErrands and integrated an in-app real-time customer support chat feature.'
       ]
     }
   ],
   projects: [
-    {
-      name: 'BeautyNBrushes',
-      role: 'Senior Full-Stack Developer',
-      url: 'https://beautynbrushes.com',
-      description:
-        'Multi-region beauty service marketplace featuring seat-based subscription billing, regional discovery, and an internal A/B testing engine.'
-    },
-    {
-      name: 'Myxellia',
-      role: 'Senior Frontend Developer',
-      url: 'https://www.myxellia.io',
-      description:
-        'Multi-tenant real estate investment platform featuring a custom real-time 3D unit allocation layout engine.'
-    },
     {
       name: 'Expert Listing',
       role: 'Frontend Developer',

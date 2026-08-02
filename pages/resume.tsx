@@ -13,7 +13,7 @@ const ensureHref = (value: string, protocol: 'https' | 'mailto' | 'tel') => {
 };
 
 export default function ResumePage() {
-  const { name, title, contact, summary, experience, projects, skills, education } =
+  const { name, title, contact, summary, experience, projects, skills, education, languages } =
     resumeData;
 
   const contactLinks = [
@@ -101,7 +101,7 @@ export default function ResumePage() {
         </section>
 
         <section className={styles.section} aria-labelledby='projects-heading'>
-          <h2 id='projects-heading'>Projects</h2>
+          <h2 id='projects-heading'>Additional Projects</h2>
           {projects.map((project) => (
             <article key={project.name} className={styles.projectItem}>
               <h3>
@@ -139,16 +139,28 @@ export default function ResumePage() {
           ))}
         </section>
 
-        <section className={styles.section} aria-labelledby='education-heading'>
-          <h2 id='education-heading'>Education</h2>
-          {education.map((entry) => (
-            <article key={entry.institution} className={styles.educationItem}>
-              <h3>{entry.degree}</h3>
-              <p>
-                {entry.institution} | {entry.startDate} – {entry.endDate}
-              </p>
-            </article>
-          ))}
+        <section
+          className={`${styles.section} ${styles.educationLanguages}`}
+          aria-labelledby='education-languages-heading'
+        >
+          <h2 id='education-languages-heading'>Education & Languages</h2>
+          <div className={styles.educationLanguagesGrid}>
+            {education.map((entry) => (
+              <article key={entry.institution} className={styles.educationItem}>
+                <h3>{entry.degree}</h3>
+                <p>
+                  {entry.institution} | {entry.startDate} – {entry.endDate}
+                </p>
+              </article>
+            ))}
+            <div className={styles.languagesBlock}>
+              {languages.map((entry) => (
+                <p key={entry.language}>
+                  <strong>{entry.language}:</strong> {entry.proficiency}
+                </p>
+              ))}
+            </div>
+          </div>
         </section>
       </main>
     </div>
