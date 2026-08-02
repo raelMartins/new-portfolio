@@ -123,3 +123,27 @@ body {
     background: var(--navy);
   }
 }
+
+@page {
+  size: letter;
+  margin: 0.4in;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  nav,
+  footer,
+  [data-theme-toggle],
+  .theme-toggle,
+  .chakra-portal {
+    display: none !important;
+  }
+}

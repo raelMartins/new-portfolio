@@ -105,12 +105,7 @@ const Navbar = () => {
               <Link href='/#contact' onClick={() => setShowNav(false)}>
                 <span>04.</span>Contact
               </Link>
-              <Link
-                href='/resume/resume-martins-akeredolu.pdf'
-                target='_blank'
-                rel='noreferrer'
-                className={styles.resumeButton}
-              >
+              <Link href='/resume' className={styles.resumeButton}>
                 Resume
               </Link>
             </nav>

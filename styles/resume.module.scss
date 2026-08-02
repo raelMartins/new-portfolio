@@ -1,0 +1,404 @@
+@import './mixins.module.scss';
+
+// Portfolio accents adapted for a light resume surface
+$resume-navy: #0a192f;
+$resume-navy-muted: #233554;
+$resume-slate: #495670;
+$resume-slate-soft: #64748b;
+$resume-accent: #0f9f8a; // darkened #64ffda for body text contrast
+$resume-accent-hover: #0b7f6e;
+$resume-accent-soft: rgba(15, 159, 138, 0.12);
+$resume-accent-border: rgba(15, 159, 138, 0.45);
+$resume-border: #e2e8f0;
+$resume-bg: #ffffff;
+$portfolio-navy: #0a192f;
+$portfolio-green: #64ffda;
+$resume-font: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+
+.page {
+  min-height: 100vh;
+  padding: 2.4rem 1.6rem 4.8rem;
+  background-color: $portfolio-navy;
+  color: $resume-navy;
+  font-family: $resume-font;
+  color-scheme: light;
+
+  @include tablet {
+    padding: 3.2rem 2.4rem 6.4rem;
+  }
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  max-width: 82rem;
+  margin: 0 auto 2rem;
+}
+
+.backLink {
+  color: $portfolio-green;
+  font-family: var(--font-mono), $resume-font;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+}
+
+.downloadButton {
+  margin-left: auto;
+  padding: 0.85rem 1.4rem;
+  color: $portfolio-green;
+  font-family: var(--font-mono), $resume-font;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid $portfolio-green;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(100, 255, 218, 0.1);
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $portfolio-green;
+    outline-offset: 2px;
+  }
+}
+
+.document {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 3.2rem 2rem 4rem;
+  background-color: $resume-bg;
+  box-shadow: 0 1px 3px rgba(2, 12, 27, 0.2), 0 12px 32px rgba(2, 12, 27, 0.35);
+  border-radius: 4px;
+
+  @include tablet {
+    padding: 4.8rem 5.6rem 5.6rem;
+  }
+
+  @include laptop {
+    padding: 5.6rem 6.4rem 6.4rem;
+  }
+}
+
+.header {
+  margin-bottom: 2.8rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid $resume-navy;
+
+  h1 {
+    margin: 0 0 0.4rem;
+    color: $resume-navy;
+    font-size: clamp(2.8rem, 4vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .title {
+    margin: 0 0 1.2rem;
+    color: $resume-accent;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+}
+
+.contactList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: $resume-slate;
+    line-height: 1.4;
+  }
+
+  a {
+    color: $resume-slate;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      color: $resume-accent;
+    }
+  }
+
+  .separator {
+    margin: 0 0.8rem;
+    color: $resume-border;
+  }
+}
+
+.section {
+  margin-bottom: 2.8rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin: 0 0 1.4rem;
+    padding-bottom: 0.6rem;
+    color: $resume-navy;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid $resume-accent;
+  }
+}
+
+.summary {
+  margin: 0;
+  color: $resume-navy-muted;
+  font-size: 1.45rem;
+  line-height: 1.65;
+}
+
+.experienceItem,
+.projectItem,
+.educationItem {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.itemHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 0.8rem;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.6rem;
+  }
+
+  h3 {
+    margin: 0;
+    color: $resume-navy;
+    font-size: 1.55rem;
+    font-weight: 600;
+    line-height: 1.35;
+
+    .company {
+      color: $resume-accent;
+      font-weight: 600;
+    }
+  }
+
+  .meta {
+    margin: 0;
+    color: $resume-slate-soft;
+    font-size: 1.25rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.8rem;
+
+  li {
+    margin-bottom: 0.55rem;
+    color: $resume-navy-muted;
+    font-size: 1.4rem;
+    line-height: 1.55;
+
+    &::marker {
+      color: $resume-accent;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.projectItem {
+  h3 {
+    margin: 0 0 0.35rem;
+    color: $resume-navy;
+    font-size: 1.55rem;
+    font-weight: 600;
+    line-height: 1.35;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover,
+      &:focus {
+        color: $resume-accent;
+      }
+    }
+
+    .role {
+      color: $resume-accent;
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+  }
+
+  p {
+    margin: 0.35rem 0 0;
+    color: $resume-navy-muted;
+    font-size: 1.4rem;
+    line-height: 1.55;
+  }
+
+  .url {
+    display: inline-block;
+    margin-top: 0.35rem;
+    color: $resume-accent;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      color: $resume-accent-hover;
+      text-decoration: underline;
+    }
+  }
+}
+
+.skillsGroup {
+  margin-bottom: 1.4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .category {
+    display: block;
+    margin-bottom: 0.7rem;
+    color: $resume-navy;
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+}
+
+.skillPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skillPill {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  color: $resume-navy-muted;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  background-color: $resume-accent-soft;
+  border: 1px solid $resume-accent-border;
+  border-radius: 999px;
+}
+
+.educationItem {
+  h3 {
+    margin: 0 0 0.3rem;
+    color: $resume-navy;
+    font-size: 1.55rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+    color: $resume-slate-soft;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
+
+@media print {
+  .page {
+    min-height: auto;
+    padding: 0;
+    background: transparent !important;
+  }
+
+  .toolbar,
+  .backLink,
+  .downloadButton {
+    display: none !important;
+  }
+
+  .document {
+    max-width: none;
+    margin: 0;
+    // Absolute units so print padding isn't affected by root font-size.
+    // box-decoration-break: clone reapplies padding on EVERY page fragment
+    // (normal padding-top only appears on page 1).
+    padding: 0.55in 0.65in !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .contactList a,
+  .projectItem a {
+    text-decoration: none !important;
+  }
+
+  .contactList a::after,
+  .projectItem a::after {
+    content: none !important;
+  }
+
+  .skillPill {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .experienceItem,
+  .projectItem,
+  .educationItem,
+  .skillsGroup {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .section h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}
