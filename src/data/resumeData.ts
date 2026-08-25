@@ -66,7 +66,7 @@ export const resumeData: ResumeData = {
     github: 'github.com/raelMartins'
   },
   summary:
-    'Senior Full-Stack Engineer with 7+ years building high-performance React, Next.js, TypeScript, and Express applications. Full-cycle owner of multi-tenant products, 3D rendering engines, AI-assisted workflows (Cursor/Antigravity), A/B testing platforms, and Stripe/Paystack billing across 4 countries.',
+    'Senior Full-Stack Engineer with 7+ years of experience building high-performance React, Next.js, TypeScript, and Express applications. Full-cycle owner of multi-tenant products, 3D rendering engines, AI-assisted workflows (Cursor/Antigravity), A/B testing platforms, and Stripe/Paystack billing across 4 countries.',
   experience: [
     {
       title: 'Senior Full-Stack Developer',
@@ -76,10 +76,10 @@ export const resumeData: ResumeData = {
       location: 'Remote',
       bullets: [
         'Migrated the platform to React, Next.js, TypeScript, and Express.js on Railway, now serving ~1,000 providers across Ghana, Nigeria, Canada, and the US.',
-        'Built Stripe and Paystack billing for localized, seat-based subscriptions in 4 countries, covering 131 salon accounts and 71 staff.',
-        'Launched a 4-country location-based marketplace for salon and solo providers, with localized discovery, routing, and regional merchant listings.',
-        'Ran onboarding A/B tests from a custom admin dashboard that lifted real-card attach from 0% to 13.8% by adding a payment-method step at end of signup.',
-        'Instrumented Google Tag Manager, Microsoft Clarity, and Meta Pixel to track the funnel, plus WhatsApp Business API alerts for bookings and payments.'
+        'Built Stripe and Paystack billing for seat-based subscriptions in 4 countries, covering 131 salon accounts and 202 staff.',
+        'Launched a 4-country location-based marketplace for salon and solo providers, with local discovery, routing, and regional merchant listings.',
+        'Ran onboarding A/B tests from a custom admin dashboard that raised the rate of users saving a real payment card from 0% to 13.8% by adding a payment step at the end of sign-up.',
+        'Implemented Google Tag Manager, Microsoft Clarity, and Meta Pixel to track the funnel, plus WhatsApp Business API alerts for bookings and payments.'
       ]
     },
     {
@@ -92,7 +92,7 @@ export const resumeData: ResumeData = {
         'Owned full-cycle frontend across 2 multi-tenant real estate platforms facilitating $6M+ in capital gains and transactions.',
         'Engineered an interactive 3D unit allocation engine so investors could inspect and select units inside live digital models.',
         'Delivered a modular theme engine with 8 themes (4+ in production) and admin dashboards for asset tracking, roles, and payment reconciliation.',
-        'Rebuilt the realtor portal end-to-end, now the primary workspace for realtor teams across the platform.'
+        'Rebuilt the property agent portal end-to-end, now the primary workspace for agent teams across the platform.'
       ]
     },
     {
@@ -117,7 +117,7 @@ export const resumeData: ResumeData = {
       ]
     },
     {
-      title: 'Front End Engineer',
+      title: 'Frontend Engineer',
       company: 'FireSwitch Technologies',
       startDate: 'Jun 2021',
       endDate: 'Dec 2021',
@@ -212,6 +212,6 @@ export const resumeData: ResumeData = {
     'Augmented Reality',
     'Reading & Books',
     'Harry Potter',
-    'Travelling'
+    'Travel'
   ]
 };
