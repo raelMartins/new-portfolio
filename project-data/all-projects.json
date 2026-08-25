@@ -124,6 +124,41 @@
     "github": ""
   },
   {
+    "id": 119,
+    "name": "BeautyNBrushes",
+    "description": "A marketplace for salon and solo beauty providers across Ghana, Nigeria, Canada, and the US. I rebuilt the platform on React, Next.js, TypeScript, and Express, with Stripe and Paystack billing, onboarding experiments, and WhatsApp alerts for bookings and payments.",
+    "url": "https://beautynbrushes.com",
+    "technologies": [
+      "react",
+      "nextjs",
+      "typescript",
+      "nodejs",
+      "css",
+      "github",
+      "git"
+    ],
+    "media": [],
+    "image": "",
+    "github": ""
+  },
+  {
+    "id": 120,
+    "name": "Expert Listing",
+    "description": "Enterprise real estate listing management portal, built as a frontend for property teams to manage listings at scale.",
+    "url": "https://expertlisting.ng",
+    "technologies": [
+      "react",
+      "nextjs",
+      "javascript",
+      "css",
+      "github",
+      "git"
+    ],
+    "media": [],
+    "image": "",
+    "github": ""
+  },
+  {
     "id": 101,
     "name": "Betrelate",
     "description": "Building a social media platform specifically tailored for football lovers. Lottery results, live scores and more can be viewed here",

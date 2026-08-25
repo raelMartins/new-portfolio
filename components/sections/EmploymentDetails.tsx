@@ -4,12 +4,14 @@ const EmploymentDetails = ({
   tasks = [],
   title = '',
   company = '',
+  displayCompany,
   timePeriod = '',
   url = ''
 }: {
   title: string;
   tasks: string[];
   company: string;
+  displayCompany?: string;
   timePeriod: string;
   url: string;
 }) => {
@@ -23,7 +25,7 @@ const EmploymentDetails = ({
         <span>
           @{' '}
           <a href={url} target='_blank' rel='noreferrer noopener'>
-            {company.split('-')[0]}
+            {displayCompany || company.split('-')[0]}
           </a>
         </span>
       </h3>

@@ -3,9 +3,10 @@ import styles from 'styles/sections/employmenthistory.module.scss';
 import EmploymentDetails from './EmploymentDetails';
 
 const EmploymentHistory = () => {
-  const [tab, setTab] = useState('myxellia');
+  const [tab, setTab] = useState('beautynbrushes');
   const [index, setIndex] = useState(0);
   const [companies] = useState([
+    'beautynbrushes',
     'myxellia',
     'betrelate',
     'fireswitch-1',
@@ -59,36 +60,42 @@ const EmploymentHistory = () => {
           <div className={styles.employmentList}>
             <span
               style={index === 0 ? activeTab : {}}
+              onClick={() => changeTab('beautynbrushes')}
+            >
+              BeautyNBrushes
+            </span>
+            <span
+              style={index === 1 ? activeTab : {}}
               onClick={() => changeTab('myxellia')}
             >
               Myxellia
             </span>
             <span
-              style={index === 1 ? activeTab : {}}
+              style={index === 2 ? activeTab : {}}
               onClick={() => changeTab('betrelate')}
             >
               Betrelate
             </span>
             <span
-              style={index === 2 ? activeTab : {}}
+              style={index === 3 ? activeTab : {}}
               onClick={() => changeTab('fireswitch-1')}
             >
               Fireswitch
             </span>
             <span
-              style={index === 3 ? activeTab : {}}
+              style={index === 4 ? activeTab : {}}
               onClick={() => changeTab('classytouch')}
             >
               Classy Touch
             </span>
             <span
-              style={index === 4 ? activeTab : {}}
+              style={index === 5 ? activeTab : {}}
               onClick={() => changeTab('solarworld')}
             >
               SolarWorld
             </span>
             <span
-              style={index === 5 ? activeTab : {}}
+              style={index === 6 ? activeTab : {}}
               onClick={() => changeTab('fireswitch-2')}
             >
               Fireswitch
@@ -99,24 +106,40 @@ const EmploymentHistory = () => {
         <div className={styles.theWhat}>
           <EmploymentDetails
             tasks={[
-              'Developed in its entirety, the client facing website for a real state development company that has generated over ₦10 billion ($6m) in capital gains.',
-              'Created a fully dynamic property store implementation allowing clients to select a theme for their store website and customize it to their preferred appearance.',
-              'Developed a platform that allows real estate property developers easily handle their properties, track their statistics, and handle their payments.',
-              `Was tasked with handling the company's official site as well as its blog and support centre.`
+              'Rebuilt the platform on React, Next.js, TypeScript, and Express. It now serves about 1,000 salon and solo providers across Ghana, Nigeria, Canada, and the US.',
+              'Set up Stripe and Paystack billing for seat-based subscriptions in those 4 countries, covering 131 salon accounts and 202 staff.',
+              'Launched a location-based marketplace for salon and solo providers, with local discovery, routing, and regional listings.',
+              'Built a custom admin A/B testing dashboard. Adding a payment step at the end of onboarding lifted the rate of users saving a real card from 0% to 13.8%.',
+              'Implemented Google Tag Manager, Microsoft Clarity, and Meta Pixel to track the funnel, plus WhatsApp Business API alerts for bookings and payments.'
             ]}
-            title='Frontend Engineer'
+            title='Senior Full-Stack Developer'
+            company='BeautyNBrushes'
+            timePeriod='January 2026 - Present'
+            url='https://beautynbrushes.com'
+          />
+          <EmploymentDetails
+            tasks={[
+              'Developed in its entirety, the client facing website for a real estate development company that has generated over ₦10 billion ($6m) in capital gains.',
+              'Created a fully dynamic property store implementation with 8 themes (4+ in production), allowing clients to select a theme and customize it to their preferred appearance.',
+              'Engineered an interactive 3D unit allocation engine so investors could inspect and select units inside live digital models.',
+              'Rebuilt the property agent portal end-to-end, now the primary workspace for agent teams across the platform.',
+              'Developed a platform that allows real estate property developers easily handle their properties, track their statistics, and handle their payments.'
+            ]}
+            title='Senior Frontend Developer'
             company='Myxellia'
-            timePeriod='January 2024 - Present'
+            timePeriod='January 2024 - May 2026'
             url='https://myxellia.io'
           />
           <EmploymentDetails
             tasks={[
-              'Developed a social media startup now used by over 5,000 users, allowing users to post text, images and other media which other users can comment, like, and interact with, live chat with other platform users, create their own groups and communities to discuss similar ideas.',
-              "Developed an Administrator site, where admins of the platform could keep track of the over 5,000 active users on the platform, ban accounts, verify accounts, moderate the content on the platform and monitor the platform's growth metrics.",
-              'Developed a simple weekly game for users interested in football/soccer allowing them to predict possible outcomes of 10 games being played, share the predictions with friends, and see how well their predictions turn out against other users via the leaderboard.'
+              'Developed a social media startup now used by over 10,000 users, allowing users to post text, images and other media which other users can comment, like, and interact with, live chat with other platform users, create their own groups and communities to discuss similar ideas.',
+              "Developed an Administrator site, where admins of the platform could keep track of the over 10,000 active users on the platform, ban accounts, verify accounts, moderate the content on the platform and monitor the platform's growth metrics.",
+              'Developed a simple weekly game for users interested in football/soccer allowing them to predict possible outcomes of 10 games being played, share the predictions with friends, and see how well their predictions turn out against other users via the leaderboard.',
+              'Cut social feed and image load times, improving key performance metrics by 30%+.'
             ]}
-            title='Frontend Engineer'
+            title='Frontend Developer'
             company='Betrelate'
+            displayCompany='Betrelate (Micserah)'
             timePeriod='December 2021 - April 2024'
             url='https://betrelate.com'
           />
@@ -127,9 +150,9 @@ const EmploymentHistory = () => {
               'Ensured responsive web design on the Reni Store web frontend.',
               'Mentored 4 web development interns, guiding them in their web development journey.'
             ]}
-            title='Web Developer'
+            title='Frontend Engineer'
             company='Fireswitch-1'
-            timePeriod='September - December 2021'
+            timePeriod='June - December 2021'
             url='https://fireswitch.tech/'
           />
           <EmploymentDetails
@@ -140,7 +163,7 @@ const EmploymentHistory = () => {
             ]}
             title='Web Developer (Contract)'
             company='ClassyTouch'
-            timePeriod='November 2019 - Present'
+            timePeriod='June 2019 - March 2022'
             url='https://classytouchlaundry-web.vercel.app/'
           />
           <EmploymentDetails

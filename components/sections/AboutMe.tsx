@@ -37,16 +37,32 @@ const AboutMe = () => {
             <a href='https://betrelate.com' target='_blank' rel='noreferrer'>
               a social media platform
             </a>
-            ,
+            ,{' '}
             <a href='https://iberrands.com' target='_blank' rel='noreferrer'>
               a logistics delivery website
-            </a>{' '}
-            and more . My main focus these days is building a cloud based
-            infrastructure of interconnected apps and services intended to
-            revolutionize the world of real estate at{' '}
+            </a>
+            , and{' '}
+            <a
+              href='https://beautynbrushes.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              a 4-country beauty marketplace
+            </a>
+            . After shipping real estate platforms at{' '}
             <a href='https://www.myxellia.io/' target='_blank' rel='noreferrer'>
               Myxellia
-            </a>{' '}
+            </a>
+            , my main focus these days is that marketplace for salon and solo
+            providers across Ghana, Nigeria, Canada, and the US at{' '}
+            <a
+              href='https://beautynbrushes.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              BeautyNBrushes
+            </a>
+            .
           </p>
           <p>
             I have also recently been looking into getting started with{' '}
@@ -65,11 +81,11 @@ const AboutMe = () => {
             <li>JavaScript (ES6+)</li>
             <li>TypeScript</li>
             <li>React</li>
-            <li>Vue</li>
             <li>NextJS</li>
-            <li>NuxtJS</li>
             <li>Node.js</li>
-            <li>React Native</li>
+            <li>Express.js</li>
+            <li>Vue</li>
+            <li>NuxtJS</li>
           </ul>
         </div>
         <div className={styles.image}>
