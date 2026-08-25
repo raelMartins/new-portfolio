@@ -66,7 +66,7 @@ export const resumeData: ResumeData = {
     github: 'github.com/raelMartins'
   },
   summary:
-    'Senior Full-Stack Engineer with 7+ years of experience architecting high-performance, data-intensive web applications using React, Next.js, TypeScript, and Express. Deep expertise in full-cycle software ownership, multi-tenant architectures, interactive 3D rendering engines, AI-augmented workflows (Cursor/Antigravity), and multi-region payment systems.',
+    'Senior Full-Stack Engineer with 7+ years building high-performance React, Next.js, TypeScript, and Express applications. Full-cycle owner of multi-tenant products, 3D rendering engines, AI-assisted workflows (Cursor/Antigravity), A/B testing platforms, and Stripe/Paystack billing across 4 countries.',
   experience: [
     {
       title: 'Senior Full-Stack Developer',
@@ -75,11 +75,11 @@ export const resumeData: ResumeData = {
       endDate: 'Present',
       location: 'Remote',
       bullets: [
-        'Architected and executed full-stack migration from legacy infrastructure to a modern React, Next.js, TypeScript, and Express.js stack deployed on Railway.',
-        'Built a multi-region payment processing engine supporting Stripe and Paystack to handle localized payments and automated recurring seat-based subscription billing.',
-        'Developed a dynamic location-based marketplace platform powering localized service discovery, intelligent routing, and regional merchant listings.',
-        'Designed and built a custom A/B testing platform dashboard within the admin suite to run real-time conversion experiments and track feature adoption.',
-        'Integrated enterprise telemetry (GTM, Microsoft Clarity, Meta Pixel) and WhatsApp Business API endpoints for automated platform notifications.'
+        'Migrated the platform to React, Next.js, TypeScript, and Express.js on Railway, now serving ~1,000 providers across Ghana, Nigeria, Canada, and the US.',
+        'Built Stripe and Paystack billing for localized, seat-based subscriptions in 4 countries, covering 131 salon accounts and 71 staff.',
+        'Launched a 4-country location-based marketplace for salon and solo providers, with localized discovery, routing, and regional merchant listings.',
+        'Ran onboarding A/B tests from a custom admin dashboard that lifted real-card attach from 0% to 13.8% by adding a payment-method step at end of signup.',
+        'Instrumented Google Tag Manager, Microsoft Clarity, and Meta Pixel to track the funnel, plus WhatsApp Business API alerts for bookings and payments.'
       ]
     },
     {
@@ -89,10 +89,10 @@ export const resumeData: ResumeData = {
       endDate: 'May 2026',
       location: 'Remote',
       bullets: [
-        'Exercised full-cycle frontend ownership across 2 multi-tenant real estate investment platforms facilitating over $6M+ in total capital gains and transactions.',
-        'Engineered an interactive, real-time 3D unit allocation engine, enabling investors to visually navigate, inspect, and select specific real estate units within digital models.',
-        'Architected a modular theme engine and administrative dashboards for real-time asset tracking, role-based user management, and automated payment reconciliation.',
-        'Led the end-to-end rebuild of the corporate web portal, significantly improving brand positioning, site performance, and user acquisition.'
+        'Owned full-cycle frontend across 2 multi-tenant real estate platforms facilitating $6M+ in capital gains and transactions.',
+        'Engineered an interactive 3D unit allocation engine so investors could inspect and select units inside live digital models.',
+        'Delivered a modular theme engine with 8 themes (4+ in production) and admin dashboards for asset tracking, roles, and payment reconciliation.',
+        'Rebuilt the realtor portal end-to-end, now the primary workspace for realtor teams across the platform.'
       ]
     },
     {
@@ -102,8 +102,8 @@ export const resumeData: ResumeData = {
       endDate: 'Apr 2024',
       location: 'Remote',
       bullets: [
-        'Architected and built a real-time social platform from the ground up for 10,000+ active users, incorporating live chat, community tools, and dynamic user profiles.',
-        'Optimized social feed and image rendering performance, reducing initial load times and improving key metrics by over 30%.'
+        'Created a real-time social platform from scratch for 10,000+ active users, with live chat, communities, and dynamic profiles.',
+        'Cut social feed and image load times, improving key performance metrics by 30%+.'
       ]
     },
     {
@@ -113,7 +113,7 @@ export const resumeData: ResumeData = {
       endDate: 'Mar 2022',
       location: 'Remote',
       bullets: [
-        'Integrated Paystack API for secure multi-currency payments and Google One Tap for frictionless client onboarding.'
+        'Integrated Paystack for multi-currency checkout and Google One Tap so new clients could sign up in a single step.'
       ]
     },
     {
@@ -123,7 +123,8 @@ export const resumeData: ResumeData = {
       endDate: 'Dec 2021',
       location: 'Hybrid/Remote',
       bullets: [
-        'Redesigned the primary web application for IBErrands and integrated an in-app real-time customer support chat feature.'
+        'Redesigned the IBErrands web app and added in-app real-time customer support chat.',
+        'Mentored 4 web development interns through production frontend work.'
       ]
     }
   ],
