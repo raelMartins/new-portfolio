@@ -1,0 +1,41 @@
+---
+description: Keep resume verbs varied and ATS-friendly; avoid repeated wording
+globs: src/data/resumeData.ts
+alwaysApply: false
+---
+
+# Resume Language Variety
+
+Repeated words make the resume read flat to ATS checkers. Diversify verbs and drop filler adjectives.
+
+## Before editing
+
+Scan all `experience` bullets (not just the ones you are changing) for repeated:
+
+- Opening verbs (`Architected`, `Built`, `Developed`, `Integrated`)
+- Recurring adjectives (`automated`, `dynamic`, `real-time`, `custom`)
+
+A stem used 3+ times across the resume must be rewritten in all but one instance.
+
+## Verb bank (prefer these over generic repeats)
+
+Owned, shipped, migrated, launched, instrumented, routed, reconciled, scheduled, triggered, rebuilt, mentored, cut, lifted, reduced.
+
+## Do not do this
+
+- Do not swap `automated` with ATS-suggested filler like `mechanized` or `computerized`. Those read dated in engineering resumes.
+- Do not open consecutive bullets at the same job with the same verb.
+- Do not repeat the same stack list in multiple bullets (`React, Next.js, TypeScript`) if it already appears in the summary or skills.
+
+## Examples
+
+```
+❌ ...handle localized payments and automated recurring seat-based subscription billing.
+✅ ...process localized Stripe and Paystack charges and recurring seat-based billing with no manual invoicing.
+
+❌ ...WhatsApp Business API endpoints for automated platform notifications.
+✅ ...WhatsApp Business API so booking and payment events notify merchants without staff intervention.
+
+❌ Architected ... (used as the opener on three different jobs)
+✅ Mix: Migrated / Launched / Owned / Rebuilt
+```
