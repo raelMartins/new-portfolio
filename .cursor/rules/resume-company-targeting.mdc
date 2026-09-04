@@ -12,12 +12,13 @@ When the user asks to tweak the resume for a specific job application:
 
 1. **Match the job title** - Set `resumeData.title` (and the summary opener) to the posting's role title exactly when it differs (e.g. `Frontend Engineer`, `Senior Software Developer`).
 2. **Bold the company in the summary** - Include the company name somewhere in `summary`, then render it with `renderSummaryWithBoldCompany(summary, 'CompanyName')` in `pages/resume.tsx`. Update the company string argument each time.
-3. **Align content to the posting** - Emphasize skills, bullets, and themes the JD cares about without inventing experience or metrics.
+3. **Align content to the posting** - Emphasize skills, bullets, and themes the JD cares about. Maximize ATS keyword overlap. Add adjacent skills per `resume-adjacent-skills.mdc`. Do not invent jobs, products, dates, or metrics.
 4. **No em/en dashes** - Use plain ASCII `-` for date ranges and punctuation. Never use `—` or `–` in resume content or the resume page.
 5. **Preserve print layout** - Do not break `@media print` CSS; keep the same visual style, layout, and accent colors unless asked otherwise.
+6. **ATS-safe structure** - Keep standard headings, parseable dates, and plain text. No tables, icons, or graphics as the only way to convey content.
 
 ## Do not
 
-- Fabricate tools, frameworks, or outcomes the user has not confirmed.
+- Invent experience, outcomes, or metrics the user has not confirmed.
 - Drop quantified metrics already present unless replacing with equally concrete numbers from the user.
 - Leave a previous company's bold target in `renderSummaryWithBoldCompany` after switching applications.

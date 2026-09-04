@@ -1,0 +1,29 @@
+---
+description: Stretch related skills for job-tailored resumes; never invent fake experience
+globs: src/data/resumeData.ts, pages/resume.tsx
+alwaysApply: true
+---
+
+# Adjacent Skills vs Invented Experience
+
+When tailoring the resume to a job posting, make it as compelling as possible. Add skills the user can pick up quickly because they already have a close equivalent. Do not invent jobs, products, dates, metrics, or work that never happened.
+
+## Allowed: related skills and tooling
+
+Put adjacent tools in `skills` (and in the summary if the JD is stacked around them) whenever they help ATS match and are a fair stretch from the real stack.
+
+OK stretches (user-confirmed examples):
+
+- SQL when the background includes Postgres and MongoDB
+- Tailwind CSS when the background includes Bootstrap, Chakra, and Sass
+- Angular when the background includes React and Vue
+- Same-category CSS libraries, UI kits, ORMs, query languages, or cloud services
+
+Prefer the Skills section for stretched tools. Do not write experience bullets that claim you shipped production work in a tool you have never used on that job.
+
+## Not allowed
+
+- Fake employers, titles, dates, products, or features
+- Invented metrics or outcomes
+- Unrelated stacks with no transfer (e.g. native iOS or Java/Spring from a JS full-stack background)
+- Calling a stretched skill "expert" or "years of production X" when it was never used in production
