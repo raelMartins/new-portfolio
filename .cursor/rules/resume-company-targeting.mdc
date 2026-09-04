@@ -16,6 +16,7 @@ When the user asks to tweak the resume for a specific job application:
 4. **No em/en dashes** - Use plain ASCII `-` for date ranges and punctuation. Never use `—` or `–` in resume content or the resume page.
 5. **Preserve print layout** - Do not break `@media print` CSS; keep the same visual style, layout, and accent colors unless asked otherwise.
 6. **ATS-safe structure** - Keep standard headings, parseable dates, and plain text. No tables, icons, or graphics as the only way to convey content.
+7. **Fit score after every posting** - After the resume tweaks, give a percentage score for how well suited the user is for that role, then a short why (strengths, gaps, and what the stretch covers). Score the real fit, not the tailored resume's keyword match.
 
 ## Do not
 
