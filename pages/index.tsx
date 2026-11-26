@@ -64,7 +64,7 @@ export default function Home({ projects }: { projects: Project[] }) {
           name='description'
           content='Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!'
         />
-        <link rel='icon' href='/mybitmoji.png' />
+        <link rel='icon' href='/profile-icon.jpg' />
 
         {/* Open Graph Meta Tags */}
         <meta property='og:title' content='Martins Akeredolu - Portfolio' />
@@ -73,7 +73,7 @@ export default function Home({ projects }: { projects: Project[] }) {
           property='og:description'
           content='Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!'
         />
-        <meta property='og:image' content='/mybitmoji.png' />
+        <meta property='og:image' content='/profile-icon.jpg' />
         <meta property='og:site_name' content='Martins Akeredolu - Portfolio' />
 
         {/* Twitter  */}
@@ -82,7 +82,7 @@ export default function Home({ projects }: { projects: Project[] }) {
           name='twitter:description'
           content='Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!'
         />
-        <meta name='twitter:image' content='/mybitmoji.png' />
+        <meta name='twitter:image' content='/profile-icon.jpg' />
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:site' content='@_raelmartins' />
         <meta

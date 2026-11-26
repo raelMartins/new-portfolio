@@ -33,7 +33,7 @@ export default function ResumePage() {
       <Head>
         <title>{`${name} - Resume`}</title>
         <meta name='description' content={`${name} - ${title}. ${summary}`} />
-        <link rel='icon' href='/mybitmoji.png' />
+        <link rel='icon' href='/profile-icon.jpg' />
       </Head>
 
       <div className={styles.toolbar}>
