@@ -1,5 +1,67 @@
 [
   {
+    "id": 121,
+    "name": "ansa",
+    "description": "ansa is a set of connected everyday tools for businesses in Nigeria. I'm building ansa Business, where vendors and makers run their shop, orders, customers and payouts, alongside ansa delivery and the mobile app, on Next.js, React Native and a Node.js + PostgreSQL API.",
+    "url": "https://ansa.africa",
+    "links": [],
+    "technologies": [
+      "react",
+      "nextjs",
+      "typescript",
+      "react native",
+      "nodejs",
+      "postgresql",
+      "git"
+    ],
+    "media": [
+      {
+        "url": "/project-media/ansa/landing_page.webp",
+        "title": "Landing Page"
+      },
+      {
+        "url": "/project-media/ansa/dashboard_page.webp",
+        "title": "Business Dashboard"
+      },
+      {
+        "url": "/project-media/ansa/orders_page.webp",
+        "title": "Orders Page"
+      }
+    ],
+    "github": ""
+  },
+  {
+    "id": 119,
+    "name": "BeautyNBrushes",
+    "description": "A marketplace for salon and solo beauty providers across Ghana, Nigeria, Canada, and the US. I rebuilt the platform on React, Next.js, TypeScript, and Express, with Stripe and Paystack billing, onboarding experiments, and WhatsApp alerts for bookings and payments.",
+    "url": "https://beautynbrushes.com",
+    "technologies": [
+      "react",
+      "nextjs",
+      "typescript",
+      "nodejs",
+      "css",
+      "github",
+      "git"
+    ],
+    "media": [
+      {
+        "url": "/project-media/bnb/landing_page.webp",
+        "title": "Landing Page"
+      },
+      {
+        "url": "/project-media/bnb/marketplace_page.webp",
+        "title": "Marketplace"
+      },
+      {
+        "url": "/project-media/bnb/dashboard_page.webp",
+        "title": "Provider Dashboard"
+      }
+    ],
+    "image": "",
+    "github": ""
+  },
+  {
     "id": 97,
     "name": "Myxellia Website",
     "description": "I handled the development of the primary website for Myxellia. Myxellia is an ever-evolving cloud based infrastructure of interconnected apps and services, built to make real estate work better for all.",
@@ -121,24 +183,6 @@
         "demo": "https://jola.6787878.com/"
       }
     ],
-    "github": ""
-  },
-  {
-    "id": 119,
-    "name": "BeautyNBrushes",
-    "description": "A marketplace for salon and solo beauty providers across Ghana, Nigeria, Canada, and the US. I rebuilt the platform on React, Next.js, TypeScript, and Express, with Stripe and Paystack billing, onboarding experiments, and WhatsApp alerts for bookings and payments.",
-    "url": "https://beautynbrushes.com",
-    "technologies": [
-      "react",
-      "nextjs",
-      "typescript",
-      "nodejs",
-      "css",
-      "github",
-      "git"
-    ],
-    "media": [],
-    "image": "",
     "github": ""
   },
   {

@@ -64,7 +64,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       <h1>Some Things I’ve Built</h1>
       <ul className={styles.projectList}>
         {projects
-          .slice(0, 4)
+          .slice(0, 6)
           .map((project, i) =>
             project?.media?.length && project?.media?.length > 0 ? (
               <ProjectGalleryCard
@@ -77,7 +77,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
             )
           )}
       </ul>
-      <MoreProjects projects={projects.slice(4)} />
+      <MoreProjects projects={projects.slice(6)} />
     </section>
   );
 };
